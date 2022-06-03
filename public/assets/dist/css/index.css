@@ -1,0 +1,12 @@
+.card-active{
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: #000;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.card-active:hover{
+    color: #202020;
+}
