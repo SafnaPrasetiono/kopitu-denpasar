@@ -19,7 +19,7 @@
 @endsection
 
 @section('pages')
-<div class="py-0 pb-lg-0 pt-lg-5">
+<div class="py-0 pb-lg-0 py-lg-5">
     <div class="elementor">
         <img src="{{ url('/images/wallpaper/yoyok.png') }}" alt="yoyok-pitoyo"
             class="d-none d-lg-block position-absolute bottom-0 start-0 animate__animated animate__fadeIn animate__slow"
@@ -28,7 +28,7 @@
             <div class="row justify-content-md-center align-items-center gy-5">
                 <div class="col-12 col-sm-9 col-md-8 col-lg-6">
                     <img src="{{ url('/images/wallpaper/yoyok.png') }}" alt="yoyok-pitoyo"
-                        class="img-fluid d-block d-lg-none w-100 animate__animated animate__fadeIn animate__slow">
+                        class="img-fluid d-inline d-lg-none w-100 animate__animated animate__fadeIn animate__slow">
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="text-center text-lg-start mb-3">
@@ -119,8 +119,8 @@
 <div class="bg-custom-3 py-5">
     <div class="container">
         <div class="d-block rounded-3 shadow-sm bg-custom-4 py-5 text-center">
-            <h3 class="text-blue-1">KAPAN LAGI AYO GABUNG SEKARANG</h3>
-            <p class="fs-5 text-blue-2">Dapatkan semua kemudahan dan jadilah sebagain bagian angota dari kami</p>
+            <h3 class="text-blue-1">KAPAN LAGI GABUNG SEKARANG</h3>
+            <p class="fs-5 text-blue-2">Dapatkan semua kemudahan dan jadilah bagian dari angota kami</p>
             <a href="#" class="btn btn-outline-primary btn-lg px-5">Gabung</a>
         </div>
     </div>

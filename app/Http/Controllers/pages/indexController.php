@@ -12,4 +12,9 @@ class indexController extends Controller
     {
         return view('index');
     }
+
+    public function about()
+    {
+        return view('pages.aboutme');
+    }
 }

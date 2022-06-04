@@ -30,8 +30,7 @@
     <link rel="stylesheet" href="{{ url('/assets/dist/css/index.css') }}">
     <link rel="stylesheet" href="{{ url('/assets/dist/css/color.css') }}">
     <link rel="stylesheet" href="{{ url('/assets/dist/css/animated.css') }}">
-    {{--
-    <link rel="stylesheet" href="{{ asset('/assets/owl/css/owl.carousel.min.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('/assets/owl/css/owl.carousel.min.css') }}">
     {{--
     <link rel="stylesheet" href="{{ asset('/assets/videosjs/css/video.min.css') }}"> --}}
     <link rel="stylesheet" href="{{ url('/assets/splide/css/splide.min.css') }}">
@@ -40,9 +39,12 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container py-1">
-            <a class="navbar-brand fw-bold" href="#">KOPITU<span class="text-primary">DENPASAR</span></a>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container py-2">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="{{ url('/images/logo/kopitu.png') }}" alt="" height="46px" style="margin-top: -8px">
+                KOPITU<span class="text-primary">DENPASAR</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -51,9 +53,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('index') }}">Beranda</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Layanan
@@ -66,6 +68,9 @@
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
+                    </li> --}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Keangotaan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Berita</a>
@@ -74,7 +79,7 @@
                         <a class="nav-link" href="#">Galeri</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tentang Kami</a>
+                        <a class="nav-link" href="{{ route('aboutme') }}">Tentang Kami</a>
                     </li>
                     @auth('user')
                     <li class="nav-item dropdown">
@@ -99,16 +104,16 @@
                     </li>
                     @else
                     <li class="nav-item d-inline d-lg-none">
-                        <a class="nav-link link-primary" href="#">Daftar</a>
+                        <a class="nav-link link-primary" href="{{ route('register') }}">Daftar</a>
                     </li>
                     <li class="nav-item d-inline d-lg-none">
-                        <a class="nav-link link-primary" href="#">Login</a>
+                        <a class="nav-link link-primary" href="{{ route('login') }}">Masuk</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="btn btn-outline-primary d-none d-lg-inline-block px-4 mx-2">Daftar</a>
+                        <a href="{{ route('register') }}" class="btn btn-outline-primary rounded-pill d-none d-lg-inline-block px-4 mx-2">Daftar</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="btn btn-primary d-none d-lg-inline-block px-4">Masuk</a>
+                        <a href="{{ route('login') }}" class="btn btn-primary rounded-pill d-none d-lg-inline-block px-4">Masuk</a>
                     </li>
                     @endauth
                 </ul>
@@ -142,8 +147,7 @@
                                 </div>
                                 <div class="d-flex mb-2">
                                     <i class="fas fa-map-marked fa-fw"></i>
-                                    <p class="mb-0 ms-2">Jl. Moh. Besar, Dusun II Prompong, Kutasari, Kec. Baturaden,
-                                        Kabupaten Banyumas, Jawa Tengah 53151</p>
+                                    <p class="mb-0 ms-2">Jl. Tukad Yeh Aya No.116, Dauh Puri Klod, Denpasar Selatan, Kota Denpasar, Bali 80234</p>
                                 </div>
                             </div>
                         </div>
@@ -173,8 +177,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-lg-between align-items-center">
-                    <div class="text-white">
+                <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
+                    <div class="text-white mb-4 mb-lg-0">
                         <span class="fw-bold fs-5 fw-bold">Social Media</span>
                         <hr class="soft" width="50px">
                         <nav class="nav">
