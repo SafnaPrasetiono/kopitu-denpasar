@@ -1,3 +1,38 @@
+.navbar{
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 9999;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    transition: linear all 0.3s;
+}
+.footer .footer-head{
+    background-color: #0a0161;
+}
+.footer .footer-head .nav-footer .nav-link{
+    color: #fff;
+    transition: linear all 0.3s;
+}
+.footer .footer-head .nav-footer .nav-link .nav-icons{
+    display: none;
+    margin-right: 0.3rem;
+    color: #fff;
+    transition: linear all 0.3s;
+}
+.footer .footer-head .nav-footer .nav-link:hover > .nav-icons{
+    display: inline;
+}
+.footer .cc{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #120c48;
+}
+
+
 .card-active{
     display: flex;
     position: relative;
@@ -9,4 +44,23 @@
 }
 .card-active:hover{
     color: #202020;
+}
+
+.navigate{
+    margin-left: auto;
+}
+.navigate .nav-item .nav-link{
+    color: rgb(0, 0, 0);
+    transition: all 0.2s;
+}
+.navigate .nav-item .nav-link:hover{
+    color: #4042e2!important;
+}
+
+
+@media(max-width: 992px){
+    .navbar{
+        min-height: 70px;
+        height: auto;
+    }
 }

@@ -9,7 +9,7 @@
         padding-bottom: 6rem;
     }
 
-    @media(max-width: 768px) {
+    @media(max-width: 992px) {
         .elementor {
             padding-top: 2rem;
             padding-bottom: 4rem;
@@ -19,19 +19,21 @@
 @endsection
 
 @section('pages')
-<div class="py-0 pb-lg-0 py-lg-5">
+<div class="position-relative py-0 py-lg-5" style="background-color: #ffffff">
+    {{-- <img src="{{ url('/images/wallpaper/top.png') }}" alt="landing-top" class="position-absolute h-100 top-0 end-0"> --}}
+    <div class="d-block" style="height: 70px;"></div>
     <div class="elementor">
         <img src="{{ url('/images/wallpaper/yoyok.png') }}" alt="yoyok-pitoyo"
             class="d-none d-lg-block position-absolute bottom-0 start-0 animate__animated animate__fadeIn animate__slow"
-            height="100%">
+            height="90%">
         <div class="container">
             <div class="row justify-content-md-center align-items-center gy-5">
-                <div class="col-12 col-sm-9 col-md-8 col-lg-6">
+                <div class="col-12 col-sm-9 col-md-8 col-lg-5">
                     <img src="{{ url('/images/wallpaper/yoyok.png') }}" alt="yoyok-pitoyo"
                         class="img-fluid d-inline d-lg-none w-100 animate__animated animate__fadeIn animate__slow">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="text-center text-lg-start mb-3">
+                    <div class="text-center text-lg-start mb-3 pe-lg-4">
                         <h2 class="mb-3 fw-bold animate__animated animate__fadeInUp">KOPITU DENPASAR</h2>
                         <p class="mb-5 animate__animated animate__fadeInUp animate__fast">KOPITU hadir untuk melakukan
                             pendampingan dan bantuan kepada UMKM dan UKM untuk

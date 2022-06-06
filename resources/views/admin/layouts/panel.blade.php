@@ -112,17 +112,17 @@
                     </a>
                     <a class="nav-link collapsed" href="#services" type="button" data-bs-toggle="collapse"
                     data-bs-target="#services">
-                    <i class="fas fa-briefcase box-icon fa-fw"></i>Layanan
+                    <i class="fas fa-users box-icon fa-fw "></i>Keanggotaan
                     <span class="indications">
                         <i class="fas fa-angle-up fa-sm fa-fw"></i>
                     </span>
                     </a>
                     <div id="services" class="accordion-collapse collapse" data-bs-parent="#nav-accordion">
-                        <a class="nav-link nav-link-child ps-5" href="#">
-                            <i class="fas fa-users box-icon fa-fw"></i>Members
+                        <a class="nav-link nav-link-child ps-5" href="{{ route('admin.category') }}">
+                            <i class="fas fa-list-alt box-icon"></i>Jenis Usaha
                         </a>
                         <a class="nav-link nav-link-child ps-5" href="#">
-                            <i class="fas fa-shopping-bag box-icon fa-fw"></i>Kopitu Store
+                            <i class="fas fa-database box-icon fa-fw "></i>Data Anggota
                         </a>
                     </div>
                     <hr class="soft my-1 text-white">

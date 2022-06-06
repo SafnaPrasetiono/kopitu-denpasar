@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\admin\indexAdmin;
+use App\Http\Controllers\admin\memberAdmin;
+use App\Http\Controllers\pages\memberController;
 use App\Http\Controllers\auth\authAdmin;
 use App\Http\Controllers\auth\authUser;
 use App\Http\Controllers\pages\indexController;
@@ -23,6 +25,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [indexController::class, 'index'])->name('index');
 Route::get('/beranda', [indexController::class, 'index'])->name('index');
+Route::get('/beranda/keanggotaan', [memberController::class, 'member'])->name('member');
+Route::get('/beranda/keanggotaan/daftar', [memberController::class, 'register'])->name('member.register');
 Route::get('/beranda/tentang-kami', [indexController::class, 'about'])->name('aboutme');
 
 
@@ -37,6 +41,10 @@ Route::post('/admin/login/post', [authAdmin::class, 'loginPost'])->name('admin.l
 Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     Route::get('/' , [indexAdmin::class, 'index'])->name('admin.index');
     Route::get('/dashboard' , [indexAdmin::class, 'index'])->name('admin.dashboard');
+
+    // keanggotaan
+    Route::get('/dashboard/jenis-usaha', [memberAdmin::class, 'category'])->name('admin.category');
+    Route::get('/dashboard/jenis-usaha/{id}', [memberAdmin::class, 'categorySub'])->name('admin.category.sub');
 
     Route::get('/logout', [indexAdmin::class, 'logout'])->name('logout');
 });

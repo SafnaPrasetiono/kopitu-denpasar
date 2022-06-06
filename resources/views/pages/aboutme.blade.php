@@ -140,7 +140,7 @@
                         <div class="owl-item">
                             <div class="my-career card pb-4 border-0 rounded-0">
                                 <div class="p-3">
-                                    <div class="ratio ratio-16x9 text-center px-4">
+                                    <div class="ratio ratio-4x3 text-center px-4">
                                         <div class="img-carer" style="background-image: url('/images/career/bpjph-2020.jpeg')"></div>
                                     </div>
                                 </div>
@@ -166,7 +166,7 @@
                         <div class="owl-item">
                             <div class="my-career card pb-4 border-0 rounded-0">
                                 <div class="p-3">
-                                    <div class="ratio ratio-16x9 text-center px-4">
+                                    <div class="ratio ratio-4x3 text-center px-4">
                                         <div class="img-carer" style="background-image: url('/images/career/bpom.jpeg')"></div>
                                     </div>
                                 </div>
@@ -192,7 +192,7 @@
                         <div class="owl-item">
                             <div class="my-career card pb-4 border-0 rounded-0">
                                 <div class="p-3">
-                                    <div class="ratio ratio-16x9 text-center px-4">
+                                    <div class="ratio ratio-4x3 text-center px-4">
                                         <div class="img-carer" style="background-image: url('/images/career/e-store.jpg')"></div>
                                     </div>
                                 </div>
@@ -218,7 +218,7 @@
                         <div class="owl-item">
                             <div class="my-career card pb-4 border-0 rounded-0">
                                 <div class="p-3">
-                                    <div class="ratio ratio-16x9 text-center px-4">
+                                    <div class="ratio ratio-4x3 text-center px-4">
                                         <div class="img-carer" style="background-image: url('/images/career/lkpp.jpeg')"></div>
                                     </div>
                                 </div>
@@ -256,14 +256,14 @@
     </div>
 </div>
 
-<div class="bg-custom-4 py-5 px-0 m-0">
+<div class="bg-blue-5 py-5 px-0 m-0">
     <div class="container pt-3 pb-5 py-lg-5">
         <div class="row g-3 align-items-stretch">
             <div class="col-12">
                 <p class="fs-3 fw-bold">Lokasi Kami</p>
             </div>
             <div class="col-12 col-md-6">
-                <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm">
+                <div class="ratio ratio-4x3 rounded-3 overflow-hidden shadow-sm">
                     <iframe class="w-100 h-100"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1489520874957!2d115.2349925140719!3d-8.677381790742741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240586dbd36eb%3A0xac31629ef06f1f6e!2sJl.%20Tukad%20Yeh%20Aya%20No.116%2C%20Dauh%20Puri%20Klod%2C%20Denpasar%20Selatan%2C%20Kota%20Denpasar%2C%20Bali%2080234!5e0!3m2!1sid!2sid!4v1654314138406!5m2!1sid!2sid"
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

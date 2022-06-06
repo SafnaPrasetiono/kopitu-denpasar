@@ -39,19 +39,18 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container py-2">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
             <a class="navbar-brand fw-bold" href="#">
-                <img src="{{ url('/images/logo/kopitu.png') }}" alt="" height="46px" style="margin-top: -8px">
+                <img src="{{ url('/images/logo/kopitu.png') }}" alt="" height="46px" style="margin-top: -8px; margin-bottom: -4px">
                 KOPITU<span class="text-primary">DENPASAR</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="btn d-inline d-lg-none btn-sm" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <i class="fas fa-bars fa-lg fa-fw"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav navigate">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ route('index') }}">Beranda</a>
                     </li>
@@ -70,7 +69,7 @@
                         </ul>
                     </li> --}}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Keangotaan</a>
+                        <a class="nav-link" href="{{ route('member') }}">Keangotaan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Berita</a>
@@ -126,61 +125,80 @@
     </section>
 
 
-    <footer>
-        <div class="py-5 bg-primary">
-            <div class="container">
-                <div class="row gy-4 mb-5">
+    <footer class="footer">
+        <div class="footer-head py-5">
+            <div class="container mb-5 py-3">
+                <div class="row gy-4">
                     <div class="col-12 col-lg-8">
                         <div class="text-white pe-0 pe-lg-5">
                             <p class="fw-bold fs-5 mb-3">Tentang Website</p>
+                            <hr class="soft text-white" width="50px">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi consequuntur tenetur
                                 eum esse! Repudiandae tenetur fuga, doloribus aliquam, quae dolorum nesciunt magni optio
                                 ducimus maiores quibusdam! Enim deserunt distinctio porro!</p>
                             <div class="pe-0 pe-md-5">
-                                <div class="d-flex mb-2">
-                                    <i class="fas fa-phone fa-fw"></i>
-                                    <p class="mb-0 ms-2">+62 882-2988-5435</p>
+                                <div class="d-flex align-items-start mb-2">
+                                    <i class="fas fa-phone fa-fw me-2"></i>
+                                    <p class="mb-0">+62 882-2988-5435</p>
                                 </div>
-                                <div class="d-flex mb-2">
-                                    <i class="fas fa-envelope fa-fw"></i>
-                                    <p class="mb-0 ms-2">info@kopitudenpasar.com</p>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-envelope fa-fw me-2"></i>
+                                    <p class="mb-0">info@kopitudenpasar.com</p>
                                 </div>
-                                <div class="d-flex mb-2">
-                                    <i class="fas fa-map-marked fa-fw"></i>
-                                    <p class="mb-0 ms-2">Jl. Tukad Yeh Aya No.116, Dauh Puri Klod, Denpasar Selatan, Kota Denpasar, Bali 80234</p>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-map-marked fa-fw me-2"></i>
+                                    <p class="mb-0">Jl. Tukad Yeh Aya No.116, Dauh Puri Klod, Denpasar Selatan, Kota Denpasar, Bali 80234</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-2">
+                    <div class="col-12 col-md-6 col-lg-2">
                         <div class="text-white">
                             <p class="fw-bold fs-5 mb-3">Terbaru</p>
-                            <nav class="nav flex-column">
-                                <a class="nav-link link-light px-0 py-1 mb-2" href="https://balisanitya.com/">Bali
-                                    Sanitiya</a>
-                                <a class="nav-link link-light px-0 py-1 mb-2" href="https://lumbungdeso.id/">Kopitu E-Store</a>
-                                <a class="nav-link link-light px-0 py-1 mb-2 active" aria-current="page" href="#">Kopitu Preneur</a>
-                                <a class="nav-link link-light px-0 py-1 mb-2" href="#">Tentang Kami</a>
+                            <hr class="soft text-white" width="50px">
+                            <nav class="nav flex-column nav-footer">
+                                <a class="nav-link link-light px-0 py-1 mb-2" href="https://balisanitya.com/">
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Bali Sanitiya
+                                </a>
+                                <a class="nav-link link-light px-0 py-1 mb-2" href="https://lumbungdeso.id/">
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Kopitu E-Store
+                                </a>
+                                <a class="nav-link link-light px-0 py-1 mb-2 active" aria-current="page" href="#">
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Kopitu Preneur
+                                </a>
+                                <a class="nav-link link-light px-0 py-1 mb-2" href="#">
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Tentang Kami
+                                </a>
                             </nav>
                         </div>
                     </div>
-                    <div class="col-12 col-md-2">
+                    <div class="col-12 col-md-6 col-lg-2">
                         <div class="text-white">
                             <p class="fw-bold fs-5 mb-3">Link Lainnya</p>
-                            <nav class="nav flex-column">
-                                <a class="nav-link link-light px-0 py-1 mb-2" href="https://balisanitya.com/">Cara
-                                    Mendaftar</a>
-                                <a class="nav-link link-light px-0 py-1 mb-2" href="https://lumbungdeso.id/">Kebijakan Privasi</a>
-                                <a class="nav-link link-light px-0 py-1 mb-2 active" aria-current="page" href="#">Syarat Ketenturan</a>
-                                <a class="nav-link link-light px-0 py-1 mb-2" href="#">Daftar dan Masuk</a>
+                            <hr class="soft text-white" width="50px">
+                            <nav class="nav flex-column nav-footer">
+                                <a class="nav-link link-light px-0 py-1 mb-2" href="https://balisanitya.com/">
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Cara Mendaftar
+                                </a>
+                                <a class="nav-link link-light px-0 py-1 mb-2" href="https://lumbungdeso.id/">
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Kebijakan Privasi
+                                </a>
+                                <a class="nav-link link-light px-0 py-1 mb-2 active" aria-current="page" href="#">
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Syarat Ketenturan
+                                </a>
+                                <a class="nav-link link-light px-0 py-1 mb-2" href="#">
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Daftar dan Masuk
+                                </a>
                             </nav>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
-                    <div class="text-white mb-4 mb-lg-0">
+            </div>
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+                    <div class="text-white text-center text-md-start mb-5 mb-md-0">
                         <span class="fw-bold fs-5 fw-bold">Social Media</span>
-                        <hr class="soft" width="50px">
+                        <hr class="soft mx-auto mx-md-0 text-white" width="50px">
                         <nav class="nav">
                             <a class="nav-link py-0 px-0 me-3" target="balnk" href="#">
                                 <img src="{{ url('/images/icons/facebook.png') }}" alt="facebook"
@@ -204,7 +222,7 @@
                             </a>
                         </nav>
                     </div>
-                    <div class="mt-auto">
+                    <div class="mt-0 mt-lg-auto">
                         <div class="d-flex align-items-center text-white">
                             <i class="fas fa-phone fa-2x fa-fw"></i>
                             <div class="d-block ms-2">
@@ -216,7 +234,7 @@
                 </div>
             </div>
         </div>
-        <div class="py-2" style="background-color: #0d5ed6">
+        <div class="cc">
             <div class="container">
                 <div class="text-center text-white">
                     <small>Suported by komite pengusaha mikro kecil menengah indonesia bersatu (KOPITU)</small>
@@ -233,8 +251,8 @@
     <script src="{{ url('/assets/dist/js/alert.js') }}"></script>
     <script src="{{ url('/assets/dist/js/index.js') }}"></script>
     <script src="{{ asset('/assets/owl/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('/assets/videosjs/js/video.min.js') }}"></script>
     <script src="{{ asset('/assets/splide/js/splide.min.js') }}"></script>
+    {{-- <script src="{{ asset('/assets/videosjs/js/video.min.js') }}"></script> --}}
     @livewireScripts
     @yield('script')
 </body>
