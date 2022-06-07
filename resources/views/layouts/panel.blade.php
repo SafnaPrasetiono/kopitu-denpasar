@@ -255,6 +255,24 @@
     {{-- <script src="{{ asset('/assets/videosjs/js/video.min.js') }}"></script> --}}
     @livewireScripts
     @yield('script')
+
+    @if(session()->has('success'))
+    <script>
+        Swal.fire({
+            icon: 'success',
+            title: 'Good Jobs!',
+            text: '{{ session()->get("success") }}',
+        })
+    </script>
+    @elseif(session()->has('error'))
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Opps...!',
+            text: '{{ session()->get("error") }}',
+        })
+    </script>
+    @endif
 </body>
 
 </html>

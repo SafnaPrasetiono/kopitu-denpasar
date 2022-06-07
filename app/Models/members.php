@@ -19,5 +19,7 @@ class members extends Model
         'born',
         'gender',
         'phone',
+        'validate',
+        'avatar',
     ];
 }

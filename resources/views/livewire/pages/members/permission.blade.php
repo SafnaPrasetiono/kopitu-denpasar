@@ -7,7 +7,7 @@
             <div class="row g-3">
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input name="ud" class="form-check-input" type="checkbox" value="" id="checkUD">
+                        <input name="ud" wire:model='ud' class="form-check-input" type="checkbox" value="1" id="checkUD">
                         <label class="form-check-label" for="checkUD">
                           Usaha Dagang
                         </label>
@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input name="siup" class="form-check-input" type="checkbox" value="" id="siup">
+                        <input name="siup" wire:model='siup' class="form-check-input" type="checkbox" value="1" id="siup">
                         <label class="form-check-label" for="siup">
                             Surat Izin Usaha Perdagangan
                         </label>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input name="halal" class="form-check-input" type="checkbox" value="" id="halal">
+                        <input name="halal" wire:model='halal' class="form-check-input" type="checkbox" value="1" id="halal">
                         <label class="form-check-label" for="halal">
                             Sertifikat Halal
                         </label>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input name="bpom" class="form-check-input" type="checkbox" value="" id="bpom">
+                        <input name="bpom" wire:model='bpom' class="form-check-input" type="checkbox" value="1" id="bpom">
                         <label class="form-check-label" for="bpom">
                             Sertifikat BPOM
                         </label>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input name="pirt" class="form-check-input" type="checkbox" value="" id="pirt">
+                        <input name="pirt" wire:model='pirt' class="form-check-input" type="checkbox" value="1" id="pirt">
                         <label class="form-check-label" for="pirt">
                             Sertifikat PIRT
                         </label>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input name="nib" class="form-check-input" type="checkbox" value="" id="NIB">
+                        <input name="nib" wire:model='nib' class="form-check-input" type="checkbox" value="1" id="NIB">
                         <label class="form-check-label" for="NIB">
                             Sertifikat NIB
                         </label>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input name="sku" class="form-check-input" type="checkbox" value="" id="SKU">
+                        <input name="sku" wire:model='sku' class="form-check-input" type="checkbox" value="1" id="SKU">
                         <label class="form-check-label" for="SKU">
                             Sertifikat SKU
                         </label>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input name="izin" class="form-check-input" type="checkbox" value="" id="izin">
+                        <input name="izin" wire:model='izin' class="form-check-input" type="checkbox" value="1" id="izin">
                         <label class="form-check-label" for="izin">
                             Tidak Memiliki Izin
                         </label>

@@ -12,8 +12,10 @@
                             @if ($photos)
                             <img src="{{ $photos->temporaryUrl() }}" class="img-fluid">
                             @else
-                            <span class="fw-bold fs-5 text-secondary" wire:loading.remove wire:target='photos'>3 x 4</span>
-                            {{-- <i class="fas fa-plus fa-3x fa-fw text-secondary"></i> --}}
+                            <div class="text-center" wire:loading.remove wire:target='photos'>
+                                <p class="fw-bold fs-5 text-secondary mb-0">3 x 4</p>
+                                <p class="mb-0 fw-light" wire:loading.remove wire:target='photos'>Upload Disini</p>
+                            </div>
                             @endif
                             <div class="loading-stage" wire:loading.flex wire:target='photos'>
                                 <div class="spinner-border" role="status">

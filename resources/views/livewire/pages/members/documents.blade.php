@@ -6,7 +6,7 @@
         <div class="p-3">
             <div class="mb-3">
                 <label for="nik" class="form-label">Nomor NIK</label>
-                <input type="text" class="form-control @error('ktp') is-invalid @enderror" id="nik"
+                <input type="text" name="nik" class="form-control @error('ktp') is-invalid @enderror" id="nik"
                     placeholder="">
                 @error('nik')
                 <div class="invalid-feedback">

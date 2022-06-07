@@ -44,7 +44,7 @@
 </div>
 <div class="py-4">
     <div class="container">
-        <form action="#" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('member.register.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('POST')
             @livewire('pages.members.biodata')
@@ -81,19 +81,20 @@
                             <li>Alamat harus sesuai dengan domisili diri kamu atau sesuai dengan kediamanmu saat ini
                             </li>
                             <li>Pastikan semua input biodata dan alamat harus terisi semua</li>
+                            <li>Upload pas foto harus berukuran 3x4</li>
+                            <li>Pastikan nik kamu sesuai dengan ktp kamu</li>
+                            <li>Kamu harus upload Kartu Tanda Penduduk(KTP)</li>
+                            <li>Format upload semua document ber extensi png, jpg, jpeg atau mpeg</li>
                         </ul>
                     </div>
                     <div>
                         <p class="fw-bold mb-2">
-                            Peraturan Upload Document
+                            Peraturan lainnya
                         </p>
                         <ul>
-                            <li>Kamu harus upload Kartu Tanda Penduduk(KTP)</li>
-                            <li>Kamu harus upload Kartu Keluarga(KK) terbaru</li>
-                            <li>Kamu harus upload akte kelahiran</li>
-                            <li>Upload pas foto haru menggunakan pakaian resmi</li>
-                            <li>Upload pas foto harus berukuran 3x4</li>
-                            <li>Format upload semua document ber extensi png, jpg, jpeg atau mpeg</li>
+                            <li>Pilih jenis usaha yang kamu miliki jika tidak ada pilih yang bersangkutan</li>
+                            <li>Jika tidak memiliki izin usaha tidak perlu diceklist</li>
+                            <li>Jelaskan secara singkat mengenai usaha yang kamu miliki dikolom deskripsi usaha</li>
                         </ul>
                     </div>
                     <div class="form-check">

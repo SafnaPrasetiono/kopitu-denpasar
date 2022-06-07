@@ -27,6 +27,7 @@ Route::get('/', [indexController::class, 'index'])->name('index');
 Route::get('/beranda', [indexController::class, 'index'])->name('index');
 Route::get('/beranda/keanggotaan', [memberController::class, 'member'])->name('member');
 Route::get('/beranda/keanggotaan/daftar', [memberController::class, 'register'])->name('member.register');
+Route::post('/beranda/keanggotaan/simpan', [memberController::class, 'store'])->name('member.register.store');
 Route::get('/beranda/tentang-kami', [indexController::class, 'about'])->name('aboutme');
 
 

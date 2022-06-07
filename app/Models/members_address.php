@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class members_address extends Model
 {
     use HasFactory;
-    protected $table = 'members_address';
+    protected $table = 'members_addresses';
 
     protected $primaryKey = 'id_members_address';
 
