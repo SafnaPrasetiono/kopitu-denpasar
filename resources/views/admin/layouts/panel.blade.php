@@ -121,12 +121,12 @@
                         <a class="nav-link nav-link-child ps-5" href="{{ route('admin.category') }}">
                             <i class="fas fa-list-alt box-icon"></i>Jenis Usaha
                         </a>
-                        <a class="nav-link nav-link-child ps-5" href="#">
+                        <a class="nav-link nav-link-child ps-5" href="{{ route('admin.member') }}">
                             <i class="fas fa-database box-icon fa-fw "></i>Data Anggota
                         </a>
                     </div>
                     <hr class="soft my-1 text-white">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="{{ route('admin.news') }}">
                         <i class="fas fa-newspaper box-icon" aria-hidden="true"></i>Berita
                     </a>
                     <a class="nav-link" href="#">

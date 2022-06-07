@@ -20,6 +20,8 @@ return new class extends Migration
             $table->date('born');
             $table->string('gender');
             $table->string('phone');
+            $table->string('class');
+            $table->string('description');
             $table->boolean('validate');
             $table->string('avatar');
             $table->timestamps();

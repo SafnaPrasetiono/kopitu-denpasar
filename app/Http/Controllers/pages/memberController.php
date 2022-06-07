@@ -51,6 +51,7 @@ class memberController extends Controller
             'categories_id'      => 'required',
             'categories_subs_id' => 'required',
             'description'        => 'required',
+            'class'              => 'required',
 
             'nik'   => 'required',
             'ktp'   => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -73,6 +74,8 @@ class memberController extends Controller
                 $members->born = $request->born;
                 $members->gender = $request->gender;
                 $members->phone = $request->phone;
+                $members->class = $request->class;
+                $members->description = $request->description;
                 $members->validate = 0;
                 $members->save();
                 
@@ -114,7 +117,6 @@ class memberController extends Controller
                 $ctg->categories_subs = $categories_sub->categories_subs;
                 $ctg->categories_id = $categories->id_categories;
                 $ctg->categories_subs_id = $categories_sub->id_categories_subs;
-                $ctg->description = $request->description;
                 $ctg->members_id = $members->id_members;
                 $ctg->save();
     

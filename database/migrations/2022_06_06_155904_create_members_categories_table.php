@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id('id_members_categories');
             $table->string('categories');
             $table->string('categories_subs');
-            $table->string('description');
             $table->integer('members_id');
             $table->integer('categories_id');
             $table->integer('categories_subs_id');

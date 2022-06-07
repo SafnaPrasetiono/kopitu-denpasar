@@ -15,7 +15,6 @@ class members_categories extends Model
     protected $fillable = [
         'categories',
         'categories_subs',
-        'description',
         'categories_id',
         'categories_subs_id',
         'members_id',

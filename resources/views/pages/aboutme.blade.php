@@ -274,9 +274,7 @@
                     <div class="col-12 mt-0">
                         <div class="d-block h-100 rounded-3 bg-white shadow-sm p-3">
                             <p class="fw-bold mb-1">Indonesia</p>
-                            <p class="mb-0"> <i class="fas fa-map-marker-alt fa-sm fa-fw"></i> Jl. Letjen S. Parman
-                                No.Kav. 28, RT.3/RW.5, Tj. Duren Sel., Kec. Grogol petamburan, Kota Jakarta Barat,
-                                Daerah Khusus Ibukota Jakarta 11470</p>
+                            <p class="mb-0"> <i class="fas fa-map-marker-alt fa-sm fa-fw"></i> Jl. Tukad Yeh Aya No.116, Dauh Puri Klod, Denpasar Selatan, Kota Denpasar, Bali 80234</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">

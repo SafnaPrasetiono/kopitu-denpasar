@@ -19,6 +19,8 @@ class members extends Model
         'born',
         'gender',
         'phone',
+        'class',
+        'description',
         'validate',
         'avatar',
     ];

@@ -72,7 +72,7 @@
                         <a class="nav-link" href="{{ route('member') }}">Keangotaan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Berita</a>
+                        <a class="nav-link" href="{{ route('news') }}">Berita</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Galeri</a>
