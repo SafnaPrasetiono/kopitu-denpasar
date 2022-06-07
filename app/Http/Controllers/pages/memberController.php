@@ -67,70 +67,70 @@ class memberController extends Controller
             $categories = categories::find($request->categories_id);
             $categories_sub = categories_sub::find($request->categories_subs_id);
 
+            $members = new members();
+            $members->username = $request->username;
+            $members->email = $request->email;
+            $members->born = $request->born;
+            $members->gender = $request->gender;
+            $members->phone = $request->phone;
+            $members->class = $request->class;
+            $members->description = $request->description;
+            $members->validate = 0;
+            $members->save();
+            
+            $image = $request->photos;
+            $nameImg = "IMG-". $members->id_members . date('YmdHis') . "." .  $image->getClientOriginalExtension();
+            $updatePhotos = members::find($members->id_members);
+            $updatePhotos->avatar = $nameImg;
+            $updatePhotos->save();
+            $image->move(public_path() . "/images/members/avatar/", $nameImg);
+
+            $address = new members_address();
+            $address->country = $request->country;
+            $address->province = $provinces->name;
+            $address->city = $cities->name;
+            $address->district = $districts->name;
+            $address->village = $villages->name;
+            $address->postal_code = $request->postal_code;
+            $address->address = $request->address;
+            $address->members_id = $members->id_members;
+            $address->id_province = $provinces->id;
+            $address->id_regency = $cities->id;
+            $address->id_district = $districts->id;
+            $address->id_village = $villages->id;
+            $address->save();
+
+            $date_images = date('YmdHis');
+            $imageKtp = $request->ktp;
+            $nameKtp = "KTP-" . $members->id_members . $date_images . "." .  $imageKtp->getClientOriginalExtension();
+
+            $document = new members_documents();
+            $document->nik = $request->nik;
+            $document->ktp = $nameKtp;
+            $document->members_id = $members->id_members;
+            $document->save();
+            $imageKtp->move(public_path() . "/images/members/ktp/", $nameKtp);
+
+            $ctg = new members_categories();
+            $ctg->categories = $categories->categories;
+            $ctg->categories_subs = $categories_sub->categories_subs;
+            $ctg->categories_id = $categories->id_categories;
+            $ctg->categories_subs_id = $categories_sub->id_categories_subs;
+            $ctg->members_id = $members->id_members;
+            $ctg->save();
+
+            $permission = new members_permission();
+            $permission->ud = $request->ud;
+            $permission->siup = $request->siup;
+            $permission->halal = $request->halal;
+            $permission->bpom = $request->bpom;
+            $permission->pirt = $request->pirt;
+            $permission->nib = $request->nib;
+            $permission->sku = $request->sku;
+            $permission->izin = $request->izin;
+            $permission->members_id = $members->id_members;
+            $permission->save();
             try {
-                $members = new members();
-                $members->username = $request->username;
-                $members->email = $request->email;
-                $members->born = $request->born;
-                $members->gender = $request->gender;
-                $members->phone = $request->phone;
-                $members->class = $request->class;
-                $members->description = $request->description;
-                $members->validate = 0;
-                $members->save();
-                
-                $image = $request->photos;
-                $nameImg = "IMG-". $members->id_members . date('YmdHis') . "." .  $image->getClientOriginalExtension();
-                $updatePhotos = members::find($members->id_members);
-                $updatePhotos->avatar = $nameImg;
-                $updatePhotos->save();
-                $image->move(public_path() . "/images/members/avatar/", $nameImg);
-    
-                $address = new members_address();
-                $address->country = $request->country;
-                $address->province = $provinces->name;
-                $address->city = $cities->name;
-                $address->district = $districts->name;
-                $address->village = $villages->name;
-                $address->postal_code = $request->postal_code;
-                $address->address = $request->address;
-                $address->members_id = $members->id_members;
-                $address->id_province = $provinces->id;
-                $address->id_regency = $cities->id;
-                $address->id_district = $districts->id;
-                $address->id_village = $villages->id;
-                $address->save();
-    
-                $date_images = date('YmdHis');
-                $imageKtp = $request->ktp;
-                $nameKtp = "KTP-" . $members->id_members . $date_images . "." .  $imageKtp->getClientOriginalExtension();
-    
-                $document = new members_documents();
-                $document->nik = $request->nik;
-                $document->ktp = $nameKtp;
-                $document->members_id = $members->id_members;
-                $document->save();
-                $imageKtp->move(public_path() . "/images/members/ktp/", $nameKtp);
-    
-                $ctg = new members_categories();
-                $ctg->categories = $categories->categories;
-                $ctg->categories_subs = $categories_sub->categories_subs;
-                $ctg->categories_id = $categories->id_categories;
-                $ctg->categories_subs_id = $categories_sub->id_categories_subs;
-                $ctg->members_id = $members->id_members;
-                $ctg->save();
-    
-                $permission = new members_permission();
-                $permission->ud = $request->ud;
-                $permission->siup = $request->siup;
-                $permission->halal = $request->halal;
-                $permission->bpom = $request->bpom;
-                $permission->pirt = $request->pirt;
-                $permission->nib = $request->nib;
-                $permission->sku = $request->sku;
-                $permission->izin = $request->izin;
-                $permission->members_id = $members->id_members;
-                $permission->save();
                 return redirect()->route('member.register')->with('success', 'Pendaftaran kamu berhasil tunggu validasi dari pihak kami.');
             } catch (\Throwable $th) {
                 //throw $th;
