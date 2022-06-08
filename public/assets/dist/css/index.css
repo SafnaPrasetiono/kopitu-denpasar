@@ -4,12 +4,17 @@
     right: 0;
     width: 100%;
     height: 70px;
-    z-index: 9999;
+    z-index: 9;
     display: flex;
     position: fixed;
     align-items: center;
     transition: linear all 0.3s;
 }
+.slider{
+    width: 320px!important;
+}
+
+
 .footer .footer-head{
     background-color: #0a0161;
 }

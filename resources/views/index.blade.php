@@ -54,8 +54,9 @@
 <div class="py-5">
     @livewire('pages.index.news')
 </div>
-
+@livewire('pages.index.count-members')
 @livewire('pages.index.members')
+
 @endsection
 
 @section('script')

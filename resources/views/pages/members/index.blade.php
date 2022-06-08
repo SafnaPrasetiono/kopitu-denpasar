@@ -32,6 +32,7 @@
     </div>
 </div>
 
+@livewire('pages.index.count-members')
 <div class="bg-blue-4 pt-5 pb-4">
     <div class="container pt-3 pb-4">
         <div class="d-block mb-3">

@@ -129,7 +129,7 @@
                     <a class="nav-link" href="{{ route('admin.news') }}">
                         <i class="fas fa-newspaper box-icon" aria-hidden="true"></i>Berita
                     </a>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="{{ route('admin.gallery') }}">
                         <i class="fas fa-image box-icon" aria-hidden="true"></i>Galery
                     </a>
                     <hr class="soft my-1 text-white">

@@ -77,18 +77,18 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="postal_code" class="form-label">Kode Pos</label>
-                    <input type="text" name="postal_code"
-                        class="form-control" id="postal_code" value="{{ $address->postal_code }}" readonly>
+                    <input type="text" name="postal_code" class="form-control" id="postal_code"
+                        value="{{ $address->postal_code }}" readonly>
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="country" class="form-label">Warga Negara</label>
-                    <input type="text" name="country" class="form-control"
-                        id="country" value="{{ $address->country }}" readonly>
+                    <input type="text" name="country" class="form-control" id="country" value="{{ $address->country }}"
+                        readonly>
                 </div>
                 <div class="col-12">
                     <label for="address" class="form-label">Alamat Lengkap</label>
-                    <textarea name="address" id="address" rows="4"
-                        class="form-control" readonly>{{ $address->address }}</textarea>
+                    <textarea name="address" id="address" rows="4" class="form-control"
+                        readonly>{{ $address->address }}</textarea>
                 </div>
             </div>
         </div>
@@ -124,67 +124,75 @@
             <div class="row g-3">
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="checkUD" @if ($ps->ud == 1) checked="true" @endif disabled>
+                        <input class="form-check-input" type="checkbox" id="checkUD" @if ($ps->ud == 1) checked="true"
+                        @endif disabled>
                         <label class="form-check-label" for="checkUD">
-                          Usaha Dagang
+                            Usaha Dagang
                         </label>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input @if ($ps->siup == 1) checked="true" @endif disabled class="form-check-input" type="checkbox" value="1" id="siup">
+                        <input @if ($ps->siup == 1) checked="true" @endif disabled class="form-check-input"
+                        type="checkbox" value="1" id="siup">
                         <label class="form-check-label" for="siup">
                             Surat Izin Usaha Perdagangan
                         </label>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input @if ($ps->halal == 1) checked="true" @endif disabled class="form-check-input" type="checkbox" value="1" id="halal">
+                        <input @if ($ps->halal == 1) checked="true" @endif disabled class="form-check-input"
+                        type="checkbox" value="1" id="halal">
                         <label class="form-check-label" for="halal">
                             Sertifikat Halal
                         </label>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input @if ($ps->bpom == 1) checked="true" @endif disabled class="form-check-input" type="checkbox" value="1" id="bpom">
+                        <input @if ($ps->bpom == 1) checked="true" @endif disabled class="form-check-input"
+                        type="checkbox" value="1" id="bpom">
                         <label class="form-check-label" for="bpom">
                             Sertifikat BPOM
                         </label>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input @if ($ps->pirt == 1) checked="true" @endif disabled class="form-check-input" type="checkbox" value="1" id="pirt">
+                        <input @if ($ps->pirt == 1) checked="true" @endif disabled class="form-check-input"
+                        type="checkbox" value="1" id="pirt">
                         <label class="form-check-label" for="pirt">
                             Sertifikat PIRT
                         </label>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input @if ($ps->nib == 1) checked="true" @endif disabled class="form-check-input" type="checkbox" value="1" id="NIB">
+                        <input @if ($ps->nib == 1) checked="true" @endif disabled class="form-check-input"
+                        type="checkbox" value="1" id="NIB">
                         <label class="form-check-label" for="NIB">
                             Sertifikat NIB
                         </label>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input @if ($ps->sku == 1) checked="true" @endif disabled class="form-check-input" type="checkbox" value="1" id="SKU">
+                        <input @if ($ps->sku == 1) checked="true" @endif disabled class="form-check-input"
+                        type="checkbox" value="1" id="SKU">
                         <label class="form-check-label" for="SKU">
                             Sertifikat SKU
                         </label>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="form-check">
-                        <input @if ($ps->izin == 1) checked="true" @endif disabled class="form-check-input" type="checkbox" value="1" id="izin">
+                        <input @if ($ps->izin == 1) checked="true" @endif disabled class="form-check-input"
+                        type="checkbox" value="1" id="izin">
                         <label class="form-check-label" for="izin">
                             Tidak Memiliki Izin
                         </label>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,13 +203,12 @@
             <p class="mb-0 fw-bold">Dekripsi Usaha</p>
         </div>
         <div class="p-3">
-            <textarea name="description" id="description" rows="4"
-                class="form-control" readonly>{{ $data->description }}</textarea>
+            <textarea name="description" id="description" rows="6" class="form-control"
+                readonly>{{ $data->description }}</textarea>
         </div>
     </div>
 
-    
-
+    @livewire('admin.members.validate', ['post' => $data->id_members])
 
 </div>
 @endsection

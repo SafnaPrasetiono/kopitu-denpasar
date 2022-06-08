@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\admin\galeryAdmin;
 use App\Http\Controllers\admin\indexAdmin;
 use App\Http\Controllers\admin\memberAdmin;
 use App\Http\Controllers\admin\newsAdmin;
 use App\Http\Controllers\pages\memberController;
 use App\Http\Controllers\auth\authAdmin;
 use App\Http\Controllers\auth\authUser;
+use App\Http\Controllers\pages\galleryController;
 use App\Http\Controllers\pages\indexController;
 use App\Http\Controllers\pages\newsController;
 use Illuminate\Support\Facades\Route;
@@ -33,7 +35,10 @@ Route::get('/beranda/keanggotaan/daftar', [memberController::class, 'register'])
 Route::post('/beranda/keanggotaan/simpan', [memberController::class, 'store'])->name('member.register.store');
 
 Route::get('/beranda/berita', [newsController::class, 'index'])->name('news');
-Route::get('/beranda/berita/{slug}', [newsController::class, 'detail'])->name('news.detail');
+Route::get('/beranda/berita/data', [newsController::class, 'search'])->name('news.search');
+Route::get('/beranda/berita/artikel/{slug}', [newsController::class, 'detail'])->name('news.detail');
+
+Route::get('/beranda/galeri', [galleryController::class, 'index'])->name('gallery');
 
 Route::get('/beranda/tentang-kami', [indexController::class, 'about'])->name('aboutme');
 
@@ -63,6 +68,17 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     Route::get('/berita/ubah/{id}', [newsAdmin::class, 'edit'])->name('admin.news.edit');
     Route::put('/berita/rubah/{id}', [newsAdmin::class, 'update'])->name('admin.news.update');
     Route::get('/berita/upload/editore', [newsAdmin::class, 'editor'])->name('admin.news.upload.editor');
+
+    // galery admin routing
+    Route::get('/galeri', [galeryAdmin::class, 'index'])->name('admin.gallery');
+    Route::get('/galeri/buat', [galeryAdmin::class, 'create'])->name('admin.gallery.create');
+    Route::post('/galeri/buat/simpan', [galeryAdmin::class, 'post'])->name('admin.gallery.post');
+    Route::get('/galeri/buat/gambar/{id}', [galeryAdmin::class, 'images'])->name('admin.gallery.create.images');
+    Route::post('/galeri/buat/gambar/simpan/{id}', [galeryAdmin::class, 'imagesPost'])->name('admin.gallery.create.images.post');
+    Route::get('/galeri/buat/selesai/{id}', [galeryAdmin::class, 'finish'])->name('admin.gallery.create.finish');
+    Route::post('/galeri/buat/selesai/simpan/{id}', [galeryAdmin::class, 'publish'])->name('admin.gallery.create.finish.post');
+    Route::get('/galeri/update/{id}', [galeryAdmin::class, 'edit'])->name('admin.gallery.update');
+    Route::put('/galeri/update/simpan/{id}', [galeryAdmin::class, 'update'])->name('admin.gallery.update.post');
 
     Route::get('/logout', [indexAdmin::class, 'logout'])->name('logout');
 });

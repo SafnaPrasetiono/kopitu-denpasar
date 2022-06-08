@@ -24,14 +24,16 @@ class memberAdmin extends Controller
         $ctg = members_categories::where('members_id', $id)->first();
         $doc = members_documents::where('members_id', $id)->first();
         $permission = members_permission::where('members_id', $id)->first();
-        return view('admin.members.detail',[
+        return view('admin.members.detail', [
             'data' => $data,
             'address' => $address,
             'ctg' => $ctg,
             'doc' => $doc,
             'ps' => $permission
-    ]);
+        ]);
     }
+
+
     // jenis usaha pages
     public function category()
     {

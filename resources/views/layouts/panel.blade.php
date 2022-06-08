@@ -42,11 +42,11 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
-                <img src="{{ url('/images/logo/kopitu.png') }}" alt="" height="46px" style="margin-top: -8px; margin-bottom: -4px">
+                <img src="{{ url('/images/logo/kopitu.png') }}" alt="" height="46px"
+                    style="margin-top: -8px; margin-bottom: -4px">
                 KOPITU<span class="text-primary">DENPASAR</span>
             </a>
-            <button class="btn d-inline d-lg-none btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
+            <button class="btn d-inline d-lg-none btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#sliderNavbar">
                 <i class="fas fa-bars fa-lg fa-fw"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -54,20 +54,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ route('index') }}">Beranda</a>
                     </li>
-                    {{-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Layanan
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('member') }}">Keangotaan</a>
                     </li>
@@ -75,7 +61,7 @@
                         <a class="nav-link" href="{{ route('news') }}">Berita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Galeri</a>
+                        <a class="nav-link" href="{{ route('gallery') }}">Galeri</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('aboutme') }}">Tentang Kami</a>
@@ -109,16 +95,47 @@
                         <a class="nav-link link-primary" href="{{ route('login') }}">Masuk</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('register') }}" class="btn btn-outline-primary rounded-pill d-none d-lg-inline-block px-4 mx-2">Daftar</a>
+                        <a href="{{ route('register') }}"
+                            class="btn btn-outline-primary rounded-pill d-none d-lg-inline-block px-4 mx-2">Daftar</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('login') }}" class="btn btn-primary rounded-pill d-none d-lg-inline-block px-4">Masuk</a>
+                        <a href="{{ route('login') }}"
+                            class="btn btn-primary rounded-pill d-none d-lg-inline-block px-4">Masuk</a>
                     </li>
                     @endauth
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="slider offcanvas offcanvas-end" tabindex="-1" id="sliderNavbar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sliderNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0 py-2">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('index') }}">Beranda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('member') }}">Keanggotaan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('news') }}">Berita</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('gallery') }}">Galeri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('register') }}">Daftar</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('login') }}">Masuk</a>
+                  </li>
+              </ul>
+        </div>
+    </div>
 
     <section>
         @yield('pages')
@@ -147,7 +164,8 @@
                                 </div>
                                 <div class="d-flex align-items-center mb-2">
                                     <i class="fas fa-map-marked fa-fw me-2"></i>
-                                    <p class="mb-0">Jl. Tukad Yeh Aya No.116, Dauh Puri Klod, Denpasar Selatan, Kota Denpasar, Bali 80234</p>
+                                    <p class="mb-0">Jl. Tukad Yeh Aya No.116, Dauh Puri Klod, Denpasar Selatan, Kota
+                                        Denpasar, Bali 80234</p>
                                 </div>
                             </div>
                         </div>
@@ -201,24 +219,24 @@
                         <hr class="soft mx-auto mx-md-0 text-white" width="50px">
                         <nav class="nav">
                             <a class="nav-link py-0 px-0 me-3" target="balnk" href="#">
-                                <img src="{{ url('/images/icons/facebook.png') }}" alt="facebook"
-                                    class="rounded-circle" width="42px" height="42px">
+                                <img src="{{ url('/images/icons/facebook.png') }}" alt="facebook" class="rounded-circle"
+                                    width="42px" height="42px">
                             </a>
                             <a class="nav-link py-0 px-0 me-3" target="balnk" href="#">
-                                <img src="{{ url('/images/icons/twitter.png') }}" alt="twitter"
-                                    class="rounded-circle" width="42px" height="42px">
+                                <img src="{{ url('/images/icons/twitter.png') }}" alt="twitter" class="rounded-circle"
+                                    width="42px" height="42px">
                             </a>
                             <a class="nav-link py-0 px-0 me-3" target="balnk" href="#">
                                 <img src="{{ url('/images/icons/instagram.png') }}" alt="instagram"
                                     class="rounded-circle" width="42px" height="42px">
                             </a>
                             <a class="nav-link py-0 px-0 me-3" target="balnk" href="#">
-                                <img src="{{ url('/images/icons/tiktok.png') }}" alt="facebook"
-                                    class="rounded-circle" width="42px" height="42px">
+                                <img src="{{ url('/images/icons/tiktok.png') }}" alt="facebook" class="rounded-circle"
+                                    width="42px" height="42px">
                             </a>
                             <a class="nav-link py-0 px-0 me-3" target="balnk" href="#">
-                                <img src="{{ url('/images/icons/youtube.png') }}" alt="youtube"
-                                    class="rounded-circle" width="42px" height="42px">
+                                <img src="{{ url('/images/icons/youtube.png') }}" alt="youtube" class="rounded-circle"
+                                    width="42px" height="42px">
                             </a>
                         </nav>
                     </div>

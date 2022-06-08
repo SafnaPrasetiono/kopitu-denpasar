@@ -14,6 +14,7 @@ class members extends Model
     protected $primaryKey = 'id_members';
 
     protected $fillable = [
+        'code',
         'username',
         'email',
         'born',

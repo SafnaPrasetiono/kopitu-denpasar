@@ -44,7 +44,7 @@
     <nav class="d-block pt-4">
         @if ($data->hasPages())
         <nav class="d-block pt-4">
-            {{ $data->links('layouts.paginations') }}
+            {{ $data->links('livewire.layouts.paginations') }}
         </nav>
         @endif
     </nav>

@@ -16,4 +16,9 @@ class newsController extends Controller
         $data = news::where('slug', $slug)->first();
         return view('pages.news.detail', ['data'=>$data]);
     }
+    public function search(Request $request)
+    {
+        $src = $request->search;
+        return view('pages.news.search', ['src' => $src]);
+    }
 }

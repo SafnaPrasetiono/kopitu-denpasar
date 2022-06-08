@@ -48,7 +48,7 @@
         </p>
         @if ($data->hasPages())
         <nav class="ms-auto">
-            {{ $data->links('livewire.admin.layouts.paginations') }}
+            {{ $data->links('livewire.layouts.paginations') }}
         </nav>
         @endif
     </div>
