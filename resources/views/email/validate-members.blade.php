@@ -68,7 +68,7 @@
                 <div
                     style="box-sizing:border-box;display:flex!important;width: 100%;margin-top:3rem!important;margin-bottom:3rem!important;align-items:center!important">
                     <p style="border: 1rem solid #00000020; border-radius: 4px; text-align:center;">
-                        {{ $data['id_members'] }}
+                        {{ $data['code'] }}
                     </p>
                 </div>
                 <div style="box-sizing:border-box;display:block!important">

@@ -139,10 +139,10 @@ class memberController extends Controller
                 $permission->izin = $request->izin;
                 $permission->members_id = $members->id_members;
                 $permission->save();
-                
+
     
                 Mail::to($request->email)->send(new ValidateMembers($updateMembers));
-                return redirect()->route('member.register')->with('success', 'Pendaftaran kamu berhasil tunggu validasi dari pihak kami.');
+                return redirect()->route('member.register')->with('success', 'Pendaftaran kamu berhasil tunggu validasi data. Cek email email anda secara berkala!.');
             } catch (\Throwable $th) {
                 //throw $th;
                 return redirect()->route('member.register')->with('error', 'Oops, maaf database desang sibuk, ulangi nanti!');
