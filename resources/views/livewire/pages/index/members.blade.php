@@ -40,7 +40,7 @@
     <script src="{{ asset('/assets/splide/js/splide.min.js') }}"></script>
     <script>
         var splide = new Splide( '.splide', {
-            // type   : '',
+            gap: 20,
             perMove: 1,
             perPage: 3,
             breakpoints: {

@@ -1,5 +1,5 @@
 <div>
-    <div class="bg-custom-3 pt-5 pb-4">
+    <div class="bg-blue-4 pt-5 pb-4">
         <div class="container pt-3 pb-4">
             <div class="d-block mb-4">
                 <h3 class="fw-bold">Keanggotaan Terbaik</h3>
@@ -40,7 +40,7 @@
     <script src="{{ asset('/assets/splide/js/splide.min.js') }}"></script>
     <script>
         var splide = new Splide( '.splide', {
-            // type   : '',
+            gap: 20,
             perMove: 1,
             perPage: 3,
             breakpoints: {

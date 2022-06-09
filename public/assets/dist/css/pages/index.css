@@ -24,6 +24,8 @@
     justify-content: center;
     height: 100%;
     padding-bottom: 3rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
 }
 .BoxMembersImg{
     border-radius: 50%;
