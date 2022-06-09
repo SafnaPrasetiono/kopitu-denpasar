@@ -7,8 +7,9 @@
 @section('pages')
 <div class="container-fluid">
     <div class="d-block rounded-3 bg-white shadow-sm mb-3">
-        <div class="p-3 border-bottom">
+        <div class="d-flex p-3 border-bottom">
             <p class="mb-0 fw-bold">Biodata Lengkap</p>
+            <span class="ms-auto badge text-bg-success lh-0">VALID</span>
         </div>
         <div class="p-3">
             <div class="row g-4">

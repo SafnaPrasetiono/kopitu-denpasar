@@ -2,6 +2,7 @@
 
 @section('head')
 <title>kopitu denpasar - keanggotaan kopitu denpasar</title>
+<link rel="stylesheet" href="{{ url('/assets/dist/css/pages/index.css') }}">
 @endsection
 
 @section('pages')
@@ -12,7 +13,7 @@
             <div class="col-12 col-lg-6 col-xl-6 order-2 order-lg-1">
                 <div class="text-center text-md-start">
                     <h1 class="display-6 fw-bold">Keangotaan</h1>
-                    <hr class="soft" style="width: 100px">
+                    <hr class="soft mx-auto mx-md-0" style="width: 100px">
                     <p class="mb-5">Komite Pengusaha Mikro Kecil Menengah Indonesia Bersatu (KOPITU) dibentuk sebagai
                         wadah di tingkat nasional yang menyatukan pelaku usaha dan pemangku kepentingan lain baik
                         pemerintah maupun non pemerintah lintas sectoral dan multi sectoral untuk bersinergi
@@ -47,8 +48,13 @@
                         <div class="splide__slide" data-splide-interval="1000">
                             <div class="mb-5 mt-4">
                                 <div class="d-block text-center">
-                                    <img src="{{ url('/images/members/avatar.png') }}" alt="username"
+                                    @if(($x/2) % 2 == 1)
+                                    <img src="{{ url('/images/members/avatarm.png') }}" alt="username"
                                         class="rounded-circle" width="120px" height="120px">
+                                    @else
+                                    <img src="{{ url('/images/members/avatarf.png') }}" alt="username"
+                                        class="rounded-circle" width="120px" height="120px">
+                                    @endif
                                 </div>
                                 <div class="card-body text-center bg-white mx-4 pt-5 pb-5"
                                     style="margin-top: -3.5rem; border-radius: 18px;">
@@ -127,15 +133,8 @@
     </div>
 </div>
 
-<div class="bg-custom-3 py-5">
-    <div class="container">
-        <div class="d-block rounded-3 shadow-sm bg-custom-4 py-5 text-center">
-            <h3 class="text-blue-1">KAPAN LAGI GABUNG SEKARANG</h3>
-            <p class="fs-5 text-blue-2">Dapatkan semua kemudahan dan jadilah bagian dari angota kami</p>
-            <a href="{{ route('member.register') }}" class="btn btn-outline-primary btn-lg px-5">Gabung</a>
-        </div>
-    </div>
-</div>
+@livewire('pages.members.checking')
+
 <div class="py-4 bg-blue-4">
     <div class="container py-5">
         <div class="d-flex align-items-center mb-4">
@@ -265,7 +264,6 @@
 @endsection
 
 @section('script')
-<script src="{{ asset('/dist/owl/owl.carousel.min.js') }}"></script>
 <script>
     var owl = $('.owl-carousel');
     owl.owlCarousel({
@@ -284,48 +282,6 @@
         owl.trigger('prev.owl.carousel', [300]);
     })
 </script>
-<script>
-    $('.MyOwl').owlCarousel({
-        loop: true,
-        margin: 12,
-        nav: false,
-        dots: false,
-        autoplay: false,
-        autoplayTimeout: 2800,
-        autoplayHoverPause: false,
-        responsiveClass: true,
-        autoWidth: true,
-    });
-    var owlTbr = $('.MyOwl');
-    owlTbr.owlCarousel();
-    // Go to the next item
-    $('.owl-next').click(function() {
-        owlTbr.trigger('next.owl.carousel');
-    })
-    // Go to the previous item
-    $('.owl-prev').click(function() {
-        // With optional speed parameter
-        // Parameters has to be in square bracket '[]'
-        owlTbr.trigger('prev.owl.carousel');
-    })
-
-    $(window).scroll(() => {
-        var wScroller = $(this).scrollTop();
-        if (wScroller > $('.t-product-new').offset().top - 300) {
-            $('.t-product-new').removeClass('opacity-0');
-            $('.t-product-new').addClass('animate__animated animate__fadeIn');
-            $('.t-product-new-animated').each((i) => {
-                setTimeout(() => {
-                    // $('.t-product-new-animated').eq(i).addClass('d-block');
-                    $('.t-product-new-animated').eq(i).removeClass('opacity-0');
-                    $('.t-product-new-animated').eq(i).addClass('animate__animated animate__slideInUp');
-                }, 200 * i + 1);
-            });
-        }
-    });
-</script>
-
-<script src="{{ asset('/dist/splide/js/splide.min.js') }}"></script>
 <script>
     var splide = new Splide( '.splide', {
         type   : 'loop',

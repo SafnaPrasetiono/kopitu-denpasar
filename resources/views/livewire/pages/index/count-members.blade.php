@@ -16,7 +16,7 @@
                         <i class="far fa-users fa-4x fa-fw"></i>
                         <div class="ms-auto px-3">
                             <p class="mb-0 fs-5 fw-light">Anggota Sudah Valid</p>
-                            <p class="mb-0 fs-2 fw-bold text-end">{{ $pasive }}</p>
+                            <p class="mb-0 fs-2 fw-bold text-end">{{ $active }}</p>
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                         <i class="fal fa-users fa-4x fa-fw"></i>
                         <div class="ms-auto px-3">
                             <p class="mb-0 fs-5 fw-light">Anggota Belum Valid</p>
-                            <p class="mb-0 fs-2 fw-bold text-end">{{ $active }}</p>
+                            <p class="mb-0 fs-2 fw-bold text-end">{{ $pasive }}</p>
                         </div>
                     </div>
                 </div>

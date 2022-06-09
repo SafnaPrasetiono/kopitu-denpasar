@@ -1,5 +1,5 @@
 <div>
-    <div class="d-block rounded-3 shadow-sm bg-white p-3">
+    <div class="position-relative d-block rounded-3 shadow-sm bg-white p-3">
         <div class="d-flex mb-3">
             <div class="ms-auto">
                 <input type="text" class="form-control" placeholder="Cari Transaksi...">
@@ -31,9 +31,9 @@
                         </td>
                         <td>
                             @if ($item->validate == 1)
-                            <span class="badge text-bg-success">Active</span>
+                            <span class="badge text-bg-success">Valid</span>
                             @else
-                            <span class="badge text-bg-secondary">Pasive</span>
+                            <span class="badge text-bg-secondary">InValid</span>
                             @endif
                         </td>
                         <td>

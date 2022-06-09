@@ -46,22 +46,20 @@
                         <p
                             style="box-sizing:border-box;margin-top:0;margin-bottom:1rem;display:inline-block;margin:0!important;width:120px!important">
                             Username <span style="box-sizing:border-box;float:right!important">:</span></p>
-                        <span style="box-sizing:border-box;margin-left:.25rem!important">{{ $data['username']
-                            }}</span>
+                        <span style="box-sizing:border-box;margin-left:.25rem!important">{{ $data['username'] }}</span>
                     </div>
                     <div style="box-sizing:border-box;display:flex!important;margin-bottom:.5rem!important">
                         <p
                             style="box-sizing:border-box;margin-top:0;margin-bottom:1rem;display:inline-block;margin:0!important;width:120px!important">
                             Alamat Email <span style="box-sizing:border-box;float:right!important">:</span></p>
                         <span style="box-sizing:border-box;margin-left:.25rem!important"><a
-                                href="mailto:{{ $data['email'] }}" target="_blank"> {{ $data['email']
-                                }}</a></span>
+                                href="mailto:{{ $data['email'] }}" target="_blank"> {{ $data['email'] }}</a></span>
                     </div>
                     <hr
                         style="box-sizing:content-box;height:0;overflow:visible;margin-top:1rem;margin-bottom:1rem;border:0;border-top:1px solid rgba(0,0,0,.1)">
                 </div>
                 <div style="box-sizing:border-box;display:block!important">
-                    Cek berkala secara berkala data pendaftaran anda di form pendaftaran keanggotaan kopitu denpasar
+                    Cek secara berkala data pendaftaran anda di form pendaftaran keanggotaan kopitu denpasar
                     berikut ini merupakan kode pendaftaran data anda:
                 </div>
 

@@ -41,10 +41,10 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
+            <a class="navbar-brand" href="#">
                 <img src="{{ url('/images/logo/kopitu.png') }}" alt="" height="46px"
-                    style="margin-top: -8px; margin-bottom: -4px">
-                KOPITU<span class="text-primary">DENPASAR</span>
+                    style="margin-top: -4px; margin-bottom: -4px">
+                <span class="px-2">KOPITU<span class="text-primary">DENPASAR</span></span>
             </a>
             <button class="btn d-inline d-lg-none btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#sliderNavbar">
                 <i class="fas fa-bars fa-lg fa-fw"></i>
@@ -52,21 +52,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav navigate">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('index') }}">Beranda</a>
+                        <a class="nav-link text-uppercase" aria-current="page" href="{{ route('index') }}">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('member') }}">Keangotaan</a>
+                        <a class="nav-link text-uppercase" href="{{ route('member') }}">Keangotaan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('news') }}">Berita</a>
+                        <a class="nav-link text-uppercase" href="{{ route('news') }}">Berita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('gallery') }}">Galeri</a>
+                        <a class="nav-link text-uppercase" href="{{ route('gallery') }}">Galeri</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('aboutme') }}">Tentang Kami</a>
+                        <a class="nav-link text-uppercase" href="{{ route('aboutme') }}">Tentang Kami</a>
                     </li>
-                    @auth('user')
+                    {{-- @auth('user')
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -102,7 +102,7 @@
                         <a href="{{ route('login') }}"
                             class="btn btn-primary rounded-pill d-none d-lg-inline-block px-4">Masuk</a>
                     </li>
-                    @endauth
+                    @endauth --}}
                 </ul>
             </div>
         </div>
@@ -127,12 +127,6 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{{ route('gallery') }}">Galeri</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}">Daftar</a>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">Masuk</a>
-                  </li>
               </ul>
         </div>
     </div>
@@ -270,7 +264,6 @@
     <script src="{{ url('/assets/dist/js/index.js') }}"></script>
     <script src="{{ asset('/assets/owl/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('/assets/splide/js/splide.min.js') }}"></script>
-    {{-- <script src="{{ asset('/assets/videosjs/js/video.min.js') }}"></script> --}}
     @livewireScripts
     @yield('script')
 

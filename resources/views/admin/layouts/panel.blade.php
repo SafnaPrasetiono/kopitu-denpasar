@@ -103,7 +103,7 @@
                     <a class="nav-link active" href="{{ route('admin.index') }}">
                         <i class="fa fa-home box-icon" aria-hidden="true"></i>Dashboard
                     </a>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="{{ route('admin.profile') }}">
                         <i class="fas fa-user box-icon" aria-hidden="true"></i>Profile
                     </a>
                     <hr class="soft my-1 text-white">

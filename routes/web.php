@@ -4,6 +4,7 @@ use App\Http\Controllers\admin\galeryAdmin;
 use App\Http\Controllers\admin\indexAdmin;
 use App\Http\Controllers\admin\memberAdmin;
 use App\Http\Controllers\admin\newsAdmin;
+use App\Http\Controllers\admin\profileAdmin;
 use App\Http\Controllers\pages\memberController;
 use App\Http\Controllers\auth\authAdmin;
 use App\Http\Controllers\auth\authUser;
@@ -17,30 +18,36 @@ use Illuminate\Support\Facades\Route;
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| This routing web kopitu denpasar form komite-umkm
+| Created by Safna Prasetiono
+| Startup form 1 june 2022
+| Version 1.0.0
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
+// index lang form indo
 Route::get('/', [indexController::class, 'index'])->name('index');
 Route::get('/beranda', [indexController::class, 'index'])->name('index');
-
 Route::get('/beranda/keanggotaan', [memberController::class, 'member'])->name('member');
 Route::get('/beranda/keanggotaan/daftar', [memberController::class, 'register'])->name('member.register');
 Route::post('/beranda/keanggotaan/simpan', [memberController::class, 'store'])->name('member.register.store');
-
 Route::get('/beranda/berita', [newsController::class, 'index'])->name('news');
 Route::get('/beranda/berita/data', [newsController::class, 'search'])->name('news.search');
 Route::get('/beranda/berita/artikel/{slug}', [newsController::class, 'detail'])->name('news.detail');
-
 Route::get('/beranda/galeri', [galleryController::class, 'index'])->name('gallery');
-
 Route::get('/beranda/tentang-kami', [indexController::class, 'about'])->name('aboutme');
+
+// translate to english
+Route::get('/en', [indexController::class, 'index'])->name('en.index');
+Route::get('/en/beranda', [indexController::class, 'index'])->name('en.index');
+Route::get('/en/beranda/keanggotaan', [memberController::class, 'member'])->name('en.member');
+Route::get('/en/beranda/keanggotaan/daftar', [memberController::class, 'register'])->name('en.member.register');
+Route::post('/en/beranda/keanggotaan/simpan', [memberController::class, 'store'])->name('en.member.register.store');
+Route::get('/en/beranda/berita', [newsController::class, 'index'])->name('en.news');
+Route::get('/en/beranda/berita/data', [newsController::class, 'search'])->name('en.news.search');
+Route::get('/en/beranda/berita/artikel/{slug}', [newsController::class, 'detail'])->name('en.news.detail');
+Route::get('/en/beranda/galeri', [galleryController::class, 'index'])->name('en.gallery');
+Route::get('/en/beranda/tentang-kami', [indexController::class, 'about'])->name('en.aboutme');
 
 
 Route::get('/beranda/masuk', [authUser::class, 'login'])->name('login');
@@ -54,6 +61,9 @@ Route::post('/admin/login/post', [authAdmin::class, 'loginPost'])->name('admin.l
 Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     Route::get('/', [indexAdmin::class, 'index'])->name('admin.index');
     Route::get('/dashboard', [indexAdmin::class, 'index'])->name('admin.dashboard');
+
+    // profile admin routing
+    Route::get('/profile', [profileAdmin::class, 'index'])->name('admin.profile');
 
     // keanggotaan
     Route::get('/dashboard/members/data', [memberAdmin::class, 'index'])->name('admin.member');

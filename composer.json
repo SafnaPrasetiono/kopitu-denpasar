@@ -1,7 +1,12 @@
 {
     "name": "laravel/laravel",
+    "authors": [{
+        "name": "Safna Prasetiono",
+        "email": "safnaprasetiono71@gmail.com"
+    }],
+    "version": "1.0.0",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "This official website form kopitu denpasar",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {

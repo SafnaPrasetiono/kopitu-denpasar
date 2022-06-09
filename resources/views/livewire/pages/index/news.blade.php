@@ -1,6 +1,6 @@
 <div>
-    <div class="news-content py-3 py-lg-5">
-        <div class="container pt-5">
+    <div class="news-content py-5">
+        <div class="container py-5">
             <div class="d-flex align-items-center mb-4">
                 <div class="d-flex text-dark-blue news-title opacity-0">
                     <i class="fas fa-newspaper fa-2x fa-fw"></i>
