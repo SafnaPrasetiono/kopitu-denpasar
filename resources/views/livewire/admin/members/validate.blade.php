@@ -9,7 +9,7 @@
                 lengkap sebagai admin memastikan data member yang mendaftar harus benar-benar lengkap</p>
         </div>
         <div class="mb-3">
-            @if ($members->validate = 0)
+            @if ($members->validate == 0)
             <button wire:click='trems' type="button" class="btn btn-outline-primary w-100">Validasikan Data</button>
             @else
             <button wire:click='valid' type="button" class="btn btn-outline-success w-100">SUDAH VALIDASI</button>
