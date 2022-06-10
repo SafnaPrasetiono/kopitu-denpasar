@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -52,19 +52,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav navigate">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" aria-current="page" href="{{ route('index') }}">Beranda</a>
+                        <a class="nav-link text-uppercase" aria-current="page" href="{{ route('en.index') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="{{ route('member') }}">Keangotaan</a>
+                        <a class="nav-link text-uppercase" href="{{ route('en.member') }}">MEMBERSHIP</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="{{ route('news') }}">Berita</a>
+                        <a class="nav-link text-uppercase" href="{{ route('en.news') }}">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="{{ route('gallery') }}">Galeri</a>
+                        <a class="nav-link text-uppercase" href="{{ route('en.gallery') }}">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="{{ route('aboutme') }}">Tentang Kami</a>
+                        <a class="nav-link text-uppercase" href="{{ route('en.aboutme') }}">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -79,16 +79,16 @@
         <div class="offcanvas-body px-0 py-2">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('index') }}">Beranda</a>
+                  <a class="nav-link" href="{{ route('index') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('member') }}">Keanggotaan</a>
+                  <a class="nav-link" href="{{ route('member') }}">MEMBERSHIP</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('news') }}">Berita</a>
+                  <a class="nav-link" href="{{ route('news') }}">News</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('gallery') }}">Galeri</a>
+                  <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
                 </li>
               </ul>
         </div>
@@ -107,7 +107,7 @@
                         <div class="text-white pe-0 pe-lg-5">
                             <p class="fw-bold fs-5 mb-3">Tentang Website</p>
                             <hr class="soft text-white" width="50px">
-                            <p>Website Kopitu Denpasar di buat untuk memberikan kemudahan kepada umkm kota Denpasar dalam pendaftaraan keanggotaan, Perbantuan dalam mengurus perizinan dan berita terbaru seputar umkm di kota denpasar , Provinsi, Nasional maupun Internasional</p>
+                            <p>The Denpasar Kopitu website was created to make it easier for Denpasar City MSMEs in registering membership, assistance in managing permits and the latest news about MSEs in Denpasar City, Province, Nationally and Internationally.</p>
                             <div class="pe-0 pe-md-5">
                                 <div class="d-flex align-items-start mb-2">
                                     <i class="fas fa-phone fa-fw me-2"></i>
@@ -140,7 +140,7 @@
                                     <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Kopitu Preneur
                                 </a>
                                 <a class="nav-link link-light px-0 py-1 mb-2" href="{{ route('aboutme') }}">
-                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Tentang Kami
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>About Us
                                 </a>
                             </nav>
                         </div>
@@ -151,16 +151,16 @@
                             <hr class="soft text-white" width="50px">
                             <nav class="nav flex-column nav-footer">
                                 <a class="nav-link link-light px-0 py-1 mb-2" href="{{ route('member') }}#cara-mendaftar">
-                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Cara Mendaftar
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>how to register
                                 </a>
                                 <a class="nav-link link-light px-0 py-1 mb-2" href="https://lumbungdeso.id/">
-                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Kebijakan Privasi
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Privacy Policy
                                 </a>
                                 <a class="nav-link link-light px-0 py-1 mb-2 active" aria-current="page" href="#">
-                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Syarat Ketenturan
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Terms and Conditions
                                 </a>
                                 <a class="nav-link link-light px-0 py-1 mb-2" href="#">
-                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>Daftar dan Masuk
+                                    <i class="fas fa-angle-double-right fa-sm nav-icons "></i>SignUp and Login
                                 </a>
                             </nav>
                         </div>
@@ -196,10 +196,10 @@
                         </nav>
                     </div>
                     <div class="mt-0 mt-lg-auto">
-                        <a href="{{ route('en.index') }}" class="d-flex align-items-center text-white link-white text-decoration-none">
-                            <img src="{{ url('/images/lang/en.png') }}" alt="" width="32px">
-                            <p class="ms-2 m-0">English</p>
-                    </a>
+                        <a href="{{ route('index') }}" class="d-flex align-items-center text-white link-white text-decoration-none">
+                                <img src="{{ url('/images/lang/ind.png') }}" alt="" width="32px">
+                                <p class="ms-2 m-0">Indonesia</p>
+                        </a>
                     </div>
                 </div>
             </div>

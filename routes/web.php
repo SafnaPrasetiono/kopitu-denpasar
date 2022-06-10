@@ -8,6 +8,10 @@ use App\Http\Controllers\admin\profileAdmin;
 use App\Http\Controllers\pages\memberController;
 use App\Http\Controllers\auth\authAdmin;
 use App\Http\Controllers\auth\authUser;
+use App\Http\Controllers\en\pages\galleryControllerEn;
+use App\Http\Controllers\en\pages\indexControllerEn;
+use App\Http\Controllers\en\pages\memberControllerEn;
+use App\Http\Controllers\en\pages\newsControllerEn;
 use App\Http\Controllers\pages\galleryController;
 use App\Http\Controllers\pages\indexController;
 use App\Http\Controllers\pages\newsController;
@@ -38,21 +42,21 @@ Route::get('/beranda/galeri', [galleryController::class, 'index'])->name('galler
 Route::get('/beranda/tentang-kami', [indexController::class, 'about'])->name('aboutme');
 
 // translate to english
-Route::get('/en', [indexController::class, 'index'])->name('en.index');
-Route::get('/en/beranda', [indexController::class, 'index'])->name('en.index');
-Route::get('/en/beranda/keanggotaan', [memberController::class, 'member'])->name('en.member');
-Route::get('/en/beranda/keanggotaan/daftar', [memberController::class, 'register'])->name('en.member.register');
-Route::post('/en/beranda/keanggotaan/simpan', [memberController::class, 'store'])->name('en.member.register.store');
-Route::get('/en/beranda/berita', [newsController::class, 'index'])->name('en.news');
-Route::get('/en/beranda/berita/data', [newsController::class, 'search'])->name('en.news.search');
-Route::get('/en/beranda/berita/artikel/{slug}', [newsController::class, 'detail'])->name('en.news.detail');
-Route::get('/en/beranda/galeri', [galleryController::class, 'index'])->name('en.gallery');
-Route::get('/en/beranda/tentang-kami', [indexController::class, 'about'])->name('en.aboutme');
+Route::get('/en', [indexControllerEn::class, 'index'])->name('en.index');
+Route::get('/en/beranda', [indexControllerEn::class, 'index'])->name('en.index');
+Route::get('/en/beranda/keanggotaan', [memberControllerEn::class, 'member'])->name('en.member');
+Route::get('/en/beranda/keanggotaan/daftar', [memberControllerEn::class, 'register'])->name('en.member.register');
+Route::post('/en/beranda/keanggotaan/simpan', [memberControllerEn::class, 'store'])->name('en.member.register.store');
+Route::get('/en/beranda/berita', [newsControllerEn::class, 'index'])->name('en.news');
+Route::get('/en/beranda/berita/data', [newsControllerEn::class, 'search'])->name('en.news.search');
+Route::get('/en/beranda/berita/artikel/{slug}', [memberControllerEn::class, 'detail'])->name('en.news.detail');
+Route::get('/en/beranda/galeri', [galleryControllerEn::class, 'index'])->name('en.gallery');
+Route::get('/en/beranda/tentang-kami', [indexControllerEn::class, 'about'])->name('en.aboutme');
 
 
-Route::get('/beranda/masuk', [authUser::class, 'login'])->name('login');
-Route::get('/beranda/daftar', [authUser::class, 'signup'])->name('register');
-Route::get('/beranda/password', [authUser::class, 'password'])->name('password.get');
+// Route::get('/beranda/masuk', [authUser::class, 'login'])->name('login');
+// Route::get('/beranda/daftar', [authUser::class, 'signup'])->name('register');
+// Route::get('/beranda/password', [authUser::class, 'password'])->name('password.get');
 // Route::post('/beranda/masuk/post', [authUser::class, 'loginPost'])->name('login.post');
 
 

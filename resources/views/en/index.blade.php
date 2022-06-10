@@ -1,7 +1,7 @@
-@extends('layouts.panel')
+@extends('en.layouts.panel')
 
 @section('head')
-<title>Kopitu Denpasar - Selamat datang di website Kopitu Denpasar</title>
+<title>Kopitu Denpasar - Welcome to the website Kopitu Denpasar</title>
 <link rel="stylesheet" href="{{ url('/assets/dist/css/pages/index.css') }}">
 @endsection
 
@@ -22,25 +22,20 @@
                 <div class="col-12 col-lg-6">
                     <div class="text-center text-lg-start mb-3 pe-lg-4">
                         <h1 class="mb-3 fw-bold animate__animated animate__fadeInUp">KOPITU DENPASAR</h1>
-                        <p class="mb-5 animate__animated animate__fadeInUp animate__fast">KOPITU hadir untuk melakukan
-                            pendampingan dan bantuan kepada UMKM dan UKM untuk
-                            meningkatkan kesejahteraan UMKM dan UKM dalam pasar dalam negeri maupun ekspor dalam bentuk
-                            fasilitasi pelatihan, alih teknologi, pemasaran , bantuan hukum serta penguatan modal usaha
-                            dan
-                            pembiayaan.</p>
+                        <p class="mb-5 animate__animated animate__fadeInUp animate__fast">KOPITU is here to provide assistance and assistance to MSMEs and SMEs to improve the welfare of MSMEs and SMEs in the domestic and export markets in the form of training facilitation, technology transfer, marketing, legal assistance as well as strengthening business capital and financing.</p>
                         <p class="fw-bold text-uppercase animate__animated animate__fadeInUp animate__fast">Ni Nyoman
-                            Junianti, <br> Ketua DPD KOPITU DENPASAR</p>
+                            Junianti, <br> Head Of DPD KOPITU DENPASAR</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-@livewire('pages.index.links')
-@livewire('pages.index.invitation')
-@livewire('pages.index.news')
-@livewire('pages.index.count-members')
-@livewire('pages.index.members')
+@livewire('en.pages.index.links')
+@livewire('en.pages.index.invitation')
+@livewire('en.pages.index.news')
+@livewire('en.pages.index.count-members')
+@livewire('en.pages.index.members')
 @endsection
 
 @section('script')

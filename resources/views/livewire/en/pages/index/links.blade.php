@@ -7,7 +7,7 @@
                     <a class="card-active opacity-0 rounded-3 shadow-sm p-3" href="#">
                         <img src="{{ url('/images/vector/business.jpg') }}" alt="busines" width="120px">
                         <div class="ms-auto px-2">
-                            <p class="text-card fw-light fs-3 mb-0">Bisnis Inkubator</p>
+                            <p class="text-card fw-light fs-3 mb-0">Incubator Business</p>
                         </div>
                     </a>
                 </div>
