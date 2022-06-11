@@ -13,6 +13,7 @@ use App\Http\Controllers\en\pages\indexControllerEn;
 use App\Http\Controllers\en\pages\memberControllerEn;
 use App\Http\Controllers\en\pages\newsControllerEn;
 use App\Http\Controllers\pages\galleryController;
+use App\Http\Controllers\pages\incubatorController;
 use App\Http\Controllers\pages\indexController;
 use App\Http\Controllers\pages\newsController;
 use Illuminate\Support\Facades\Route;
@@ -40,6 +41,7 @@ Route::get('/beranda/berita/data', [newsController::class, 'search'])->name('new
 Route::get('/beranda/berita/artikel/{slug}', [newsController::class, 'detail'])->name('news.detail');
 Route::get('/beranda/galeri', [galleryController::class, 'index'])->name('gallery');
 Route::get('/beranda/tentang-kami', [indexController::class, 'about'])->name('aboutme');
+Route::get('/beranda/inkubator', [incubatorController::class, 'index'])->name('incubator');
 
 // translate to english
 Route::get('/en', [indexControllerEn::class, 'index'])->name('en.index');

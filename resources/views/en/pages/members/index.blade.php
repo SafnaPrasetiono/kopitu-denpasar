@@ -1,7 +1,7 @@
 @extends('en.layouts.panel')
 
 @section('head')
-<title>kopitu denpasar - keanggotaan kopitu denpasar</title>
+<title>kopitu denpasar - Membership kopitu denpasar</title>
 <link rel="stylesheet" href="{{ url('/assets/dist/css/pages/index.css') }}">
 @endsection
 

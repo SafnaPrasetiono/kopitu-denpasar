@@ -61,7 +61,7 @@
                 <div class="text-center text-lg-start">
                     <h1>Tentang Kami</h1>
                     <hr class="soft mx-auto mx-lg-0" style="width: 24%">
-                    <p class="fs-5">Kopitu preneur merupakan suatu wadah yang buat oleh Komite Pengusaha Mikro Kecil
+                    <p class="fs-5">Kopitu denpasar merupakan suatu wadah yang buat oleh Komite Pengusaha Mikro Kecil
                         Menengah Indonesia Bersatu (KOPITU) sebagai agen atau enabler untuk membantu umkm dalam
                         pengurusuan
                         perizinan serta membantu memasarkan atau menghubungkan umkm dan pembeli melalui platform B2B

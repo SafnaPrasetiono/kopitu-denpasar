@@ -90,6 +90,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{{ route('gallery') }}">Galeri</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('aboutme') }}">Tentang Kami</a>
+                </li>
               </ul>
         </div>
     </div>

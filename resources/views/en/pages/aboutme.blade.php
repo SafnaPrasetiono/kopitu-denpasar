@@ -61,7 +61,7 @@
                 <div class="text-center text-lg-start">
                     <h1>About Us</h1>
                     <hr class="soft mx-auto mx-lg-0" style="width: 24%">
-                    <p class="fs-5">Kopitu preneur is a forum created by the United Indonesia Micro, Small and Medium Entrepreneurs Committee (KOPITU) as an agent or enabler to assist MSMEs in licensing management and help market or connect MSMEs and buyers through Kopitu's B2B platform, namely Kopitu E-Store</p>
+                    <p class="fs-5">Kopitu denpasar is a forum created by the United Indonesia Micro, Small and Medium Entrepreneurs Committee (KOPITU) as an agent or enabler to assist MSMEs in licensing management and help market or connect MSMEs and buyers through Kopitu's B2B platform, namely Kopitu E-Store</p>
                 </div>
             </div>
             <div class="col-10 col-lg-6 order-1 order-lg-2">

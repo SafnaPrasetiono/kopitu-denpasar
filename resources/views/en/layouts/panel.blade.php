@@ -79,16 +79,19 @@
         <div class="offcanvas-body px-0 py-2">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('index') }}">Home</a>
+                  <a class="nav-link" href="{{ route('en.index') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('member') }}">MEMBERSHIP</a>
+                  <a class="nav-link" href="{{ route('en.member') }}">Membership</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('news') }}">News</a>
+                  <a class="nav-link" href="{{ route('en.news') }}">News</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
+                  <a class="nav-link" href="{{ route('en.gallery') }}">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('en.aboutme') }}">Tentang Kami</a>
                 </li>
               </ul>
         </div>
