@@ -33,10 +33,10 @@
     </div>
     <div class="bg-custom-3 py-5">
         <div class="container">
-            <div class="d-block rounded-3 shadow-sm bg-custom-4 py-5 text-center">
+            <div class="d-block rounded-3 shadow-sm bg-custom-4 py-5 px-3 text-center">
                 <h3 class="text-blue-1">KAPAN LAGI GABUNG SEKARANG</h3>
                 <p class="fs-5 text-blue-2">Dapatkan semua kemudahan dan jadilah bagian dari angota kami</p>
-                <a href="#" class="btn btn-outline-primary btn-lg px-5">Gabung</a>
+                <a href="{{ route('member') }}" class="btn btn-outline-primary btn-lg px-5">Gabung</a>
             </div>
         </div>
     </div>

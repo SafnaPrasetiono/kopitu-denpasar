@@ -9,8 +9,19 @@
     position: absolute;
     width: 500px;
     height: 500px;
-    right: -200px;
+    left: -50px;
     top: -200px;
+    background: #007bff50;
+    filter: blur(140px);
+    z-index: 0;
+    border-radius: 50%;
+}
+.background-right {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: -200px;
+    top: 100px;
     background: #007bff50;
     filter: blur(140px);
     z-index: 0;
@@ -57,7 +68,11 @@
 
 @media(max-width: 992px) {
     .elementor {
-        padding-top: 2rem;
+        padding-top: 0rem;
         padding-bottom: 4rem;
+    }
+    .background-right{
+        top: auto;
+        bottom: 50px;
     }
 }

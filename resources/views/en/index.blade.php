@@ -9,14 +9,15 @@
 <div class="position-relative overflow-hidden">
     <div class="d-block" style="height: 70px;"></div>
     <div class="background-left"></div>
+    <div class="background-right"></div>
     <div class="elementor">
-        <img src="{{ url('/images/wallpaper/yoyok.png') }}" alt="yoyok-pitoyo"
+        <img src="{{ url('/images/wallpaper/umkm-bali.png') }}" alt="umkm-bali"
             class="d-none d-lg-block position-absolute bottom-0 start-0 animate__animated animate__fadeIn animate__slow"
             height="95%">
         <div class="container">
             <div class="row justify-content-md-center align-items-center gy-5">
                 <div class="col-12 col-sm-9 col-md-8 col-lg-6">
-                    <img src="{{ url('/images/wallpaper/yoyok.png') }}" alt="yoyok-pitoyo"
+                    <img src="{{ url('/images/wallpaper/umkm-bali.png') }}" alt="umkm-bali"
                         class="img-fluid d-inline d-lg-none w-100 animate__animated animate__fadeIn animate__slow">
                 </div>
                 <div class="col-12 col-lg-6">

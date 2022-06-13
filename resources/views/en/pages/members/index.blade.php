@@ -31,42 +31,44 @@
 @livewire('en.pages.members.members')
 
 <div class="py-5">
-    <div class="container py-5">
+    <div class="container py-3">
         <div class="d-block mb-4">
             <p class="mb-0 fs-3 fw-bold">MEMBERSHIP TYPES</p>
             <p class="mb-0">join us and get the benefits form kopitu denpasar</p>
         </div>
-        <div class="row justify-content-center align-items-center mb-3 py-3">
-            <div class="col-10 col-md-8 col-lg-6">
-                <img src="{{ url('/images/vector/MIKRO.png') }}" alt="about-logo" class="img-fluid">
-            </div>
-            <div class="col-12 col-lg-6">
-                <h3 class="fw-bold">MICRO</h3>
-                <hr class="soft" style="width: 100px">
-                <p class="text-capitalize">Micro Is Defined As A Productive Economic Business Owned By Individuals And Business Entities In Accordance With The Criteria Of Micro-Enterprises. Businesses That Are Included In The Criteria For Micro-Enterprises Are Businesses That Have A Net Worth Of Rp. 50,000,000, - And Do Not Include Buildings And Land For Business Premises. The Proceeds From The Sale Of Micro-Enterprises Every Year Are At Most RP 300,000,000</p>
-            </div>
-        </div>
-        <div class="row justify-content-center align-items-center mb-3 py-3">
-            <div class="col-12 col-lg-6 order-2 order-lg-1">
-                <h3 class="fw-bold">SMALL</h3>
-                <hr class="soft" style="width: 100px">
-                <p class="text-capitalize">A Small Business Is An Independent Or Stand-Alone Business Either Individually Or In A Group And Not As A Branch Business Entity Of The Main Company. Businesses That Are Included In The Criteria For Small Businesses Are Businesses That Have A Net Worth Of Rp. 50,000,000, - With The Maximum Required Reaching Rp. 500,000,000,-. The Results Of Business Sales Every Year Are Between Rp. 300,000,000 To A Maximum Of Rp. 2,5,000,000,000,-.</p>
-            </div>
-            <div class="col-10 col-md-8 col-lg-6 order-1 order-lg-2">
-                <img src="{{ url('/images/vector/KECIL.png') }}" alt="about-kopitu" class="img-fluid">
-            </div>
-        </div>
-        <div class="row justify-content-center align-items-center mb-3 py-3">
-            <div class="col-10 col-md-8 col-lg-6">
-                <img src="{{ url('/images/vector/MENENGAH.png') }}" alt="about-logo" class="img-fluid">
-            </div>
-            <div class="col-12 col-lg-6">
-                <h3 class="fw-bold">INTERMEDIATE</h3>
-                <hr class="soft" style="width: 100px">
-                <p class="text-capitalize">Medium-Sized Businesses Are Often Categorized As Large Businesses With Net Worth Criteria Owned By Business Owners Reaching More Than Rp. 500,000,000 To Rp. 10,000,000,000, - And Excluding Buildings And Land For Business Premises. The Annual Sales Reached IDR 2.5,000,000 Billion To IDR 50,000,000,000,-.</p>
-            </div>
-        </div>
     </div>
+        <div class="container py-3 text-center text-lg-start">
+            <div class="row justify-content-center align-items-center mb-3 py-3">
+                <div class="col-10 col-md-8 col-lg-6">
+                    <img src="{{ url('/images/vector/MIKRO.png') }}" alt="about-logo" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h3 class="fw-bold">MICRO</h3>
+                    <hr class="soft mx-auto mx-lg-0" style="width: 100px">
+                    <p class="text-capitalize">Micro Is Defined As A Productive Economic Business Owned By Individuals And Business Entities In Accordance With The Criteria Of Micro-Enterprises. Businesses That Are Included In The Criteria For Micro-Enterprises Are Businesses That Have A Net Worth Of Rp. 50,000,000, - And Do Not Include Buildings And Land For Business Premises. The Proceeds From The Sale Of Micro-Enterprises Every Year Are At Most RP 300,000,000</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mb-3 py-3">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <h3 class="fw-bold">SMALL</h3>
+                    <hr class="soft mx-auto mx-lg-0" style="width: 100px">
+                    <p class="text-capitalize">A Small Business Is An Independent Or Stand-Alone Business Either Individually Or In A Group And Not As A Branch Business Entity Of The Main Company. Businesses That Are Included In The Criteria For Small Businesses Are Businesses That Have A Net Worth Of Rp. 50,000,000, - With The Maximum Required Reaching Rp. 500,000,000,-. The Results Of Business Sales Every Year Are Between Rp. 300,000,000 To A Maximum Of Rp. 2,5,000,000,000,-.</p>
+                </div>
+                <div class="col-10 col-md-8 col-lg-6 order-1 order-lg-2">
+                    <img src="{{ url('/images/vector/KECIL.png') }}" alt="about-kopitu" class="img-fluid">
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mb-3 py-3">
+                <div class="col-10 col-md-8 col-lg-6">
+                    <img src="{{ url('/images/vector/MENENGAH.png') }}" alt="about-logo" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h3 class="fw-bold">INTERMEDIATE</h3>
+                    <hr class="soft mx-auto mx-lg-0" style="width: 100px">
+                    <p class="text-capitalize">Medium-Sized Businesses Are Often Categorized As Large Businesses With Net Worth Criteria Owned By Business Owners Reaching More Than Rp. 500,000,000 To Rp. 10,000,000,000, - And Excluding Buildings And Land For Business Premises. The Annual Sales Reached IDR 2.5,000,000 Billion To IDR 50,000,000,000,-.</p>
+                </div>
+            </div>
+        </div>
 </div>
 
 @livewire('pages.members.checking')

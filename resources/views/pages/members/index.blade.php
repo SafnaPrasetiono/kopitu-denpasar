@@ -33,25 +33,27 @@
 @livewire('pages.members.members')
 
 <div class="py-5">
-    <div class="container py-5">
+    <div class="container py-3">
         <div class="d-block mb-4">
             <p class="mb-0 fs-3 fw-bold">JENIS KEANGGOTAAN</p>
             <p class="mb-0">bergabunglah bersama kami dan dapatkan manfaatnya</p>
         </div>
+    </div>
+    <div class="container py-3 text-center text-lg-start">
         <div class="row justify-content-center align-items-center mb-3 py-3">
             <div class="col-10 col-md-8 col-lg-6">
                 <img src="{{ url('/images/vector/MIKRO.png') }}" alt="about-logo" class="img-fluid">
             </div>
             <div class="col-12 col-lg-6">
                 <h3 class="fw-bold">MIKRO</h3>
-                <hr class="soft" style="width: 100px">
+                <hr class="soft mx-auto mx-lg-0" style="width: 100px">
                 <p class="text-capitalize lh-lg">Mikro diartikan sebagai usaha ekonomi produktif yang dimiliki perorangan maupun badan usaha sesuai dengan kriteria usaha mikro. Usaha yang termasuk kriteria usaha mikro adalah usaha yang memiliki kekayaan bersih mencapai Rp 50.000.000,- dan tidak termasuk bangunan dan tanah tempat usaha. Hasil penjualan usaha mikro setiap tahunnnya paling banyak Rp 300.000.000,-</p>
             </div>
         </div>
         <div class="row justify-content-center align-items-center mb-3 py-3">
             <div class="col-12 col-lg-6 order-2 order-lg-1">
                 <h3 class="fw-bold">KECIL</h3>
-                <hr class="soft" style="width: 100px">
+                <hr class="soft mx-auto mx-lg-0" style="width: 100px">
                 <p class="text-capitalize lh-lg">Usaha kecil merupakan suatu usaha independen atau berdiri sendiri baik perorangan atau kelompok dan bukan sebagai badan usaha cabang dari perusahaan utama. Usaha yang masuk kriteria usaha kecil adalah usaha yang memiliki kekayaan bersih Rp 50.000.000,- dengan maksimal yang dibutuhkannya mencapai Rp 500.000.000,-. Hasil penjualan bisnis setiap tahunnya antara Rp 300.000.000,- sampai paling banyak Rp 2,5.000.000.000,-.</p>
             </div>
             <div class="col-10 col-md-8 col-lg-6 order-1 order-lg-2">
@@ -64,7 +66,7 @@
             </div>
             <div class="col-12 col-lg-6">
                 <h3 class="fw-bold">MENENGAH</h3>
-                <hr class="soft" style="width: 100px">
+                <hr class="soft mx-auto mx-lg-0" style="width: 100px">
                 <p class="text-capitalize lh-lg">Usaha menengah sering dikategorikan sebagai bisnis besar dengan kriteria kekayaan bersih yang dimiliki pemilik usaha mencapai lebih dari Rp500.000.000,- hingga Rp10.000.000.000,- dan tidak termasuk bangunan dan tanah tempat usaha. Hasil penjualan tahunannya mencapai Rp2,5 .000.000,- milyar sampai Rp50.000.000.000,-.</p>
             </div>
         </div>
