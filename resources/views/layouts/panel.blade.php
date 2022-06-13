@@ -176,7 +176,7 @@
                         <span class="fw-bold fs-5 fw-bold">Social Media</span>
                         <hr class="soft mx-auto mx-md-0 text-white" width="50px">
                         <nav class="nav">
-                            <a class="nav-link py-0 px-0 me-3" target="balnk" href="#">
+                            <a class="nav-link py-0 px-0 me-3" target="balnk" href="https://web.facebook.com/profile.php?viewas=100000686899395&id=100082004898287">
                                 <img src="{{ url('/images/icons/facebook.png') }}" alt="facebook" class="rounded-circle"
                                     width="42px" height="42px">
                             </a>
@@ -184,15 +184,15 @@
                                 <img src="{{ url('/images/icons/twitter.png') }}" alt="twitter" class="rounded-circle"
                                     width="42px" height="42px">
                             </a>
-                            <a class="nav-link py-0 px-0 me-3" target="balnk" href="#">
+                            <a class="nav-link py-0 px-0 me-3" target="balnk" href="https://www.instagram.com/infokopitudenpasarbali">
                                 <img src="{{ url('/images/icons/instagram.png') }}" alt="instagram"
                                     class="rounded-circle" width="42px" height="42px">
                             </a>
-                            <a class="nav-link py-0 px-0 me-3" target="balnk" href="#">
-                                <img src="{{ url('/images/icons/tiktok.png') }}" alt="facebook" class="rounded-circle"
+                            <a class="nav-link py-0 px-0 me-3" target="balnk" href="https://www.tiktok.com/@infokopitudenpasarbali">
+                                <img src="{{ url('/images/icons/tiktok.png') }}" alt="tiktok" class="rounded-circle"
                                     width="42px" height="42px">
                             </a>
-                            <a class="nav-link py-0 px-0 me-3" target="balnk" href="#">
+                            <a class="nav-link py-0 px-0 me-3" target="balnk" href="https://www.youtube.com/channel/UCfWukjQyGwmnhNAuBSIc1Aw">
                                 <img src="{{ url('/images/icons/youtube.png') }}" alt="youtube" class="rounded-circle"
                                     width="42px" height="42px">
                             </a>
