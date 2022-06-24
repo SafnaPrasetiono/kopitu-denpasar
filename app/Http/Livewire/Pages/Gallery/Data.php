@@ -19,7 +19,7 @@ class Data extends Component
     }
     public function render()
     {
-        $data = galleries::orderBy('created_at')->paginate(11);
+        $data = galleries::orderBy('created_at', 'desc')->paginate(11);
         return view('livewire.pages.gallery.data', ['data' => $data]);
     }
 }
