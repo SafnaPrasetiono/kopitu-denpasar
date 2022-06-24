@@ -25,7 +25,7 @@
 
 @section('pages')
 <div class="d-block" style="height: 70px"></div>
-<div class="d-block py-5 bg-danger">
+<div class="d-block py-5 bg-primary">
     <div class="container">
         <h2 class="fw-bold text-white">Gallery Kopitu Denpasar</h2>
         <ol class="breadcrumb mb-0">
