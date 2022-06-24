@@ -1,69 +1,85 @@
 <div>
-    <div class="blue-sky py-5">
-        <div class="container">
-            <div class="d-flex flex-column flex-lg-row align-items-lg-center">
-                <div class="mb-3 mb-lg-0">
-                    <h3 class="fw-bold text-white">GALERI</h3>
-                    <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item text-light"><a href="#" class="link-light">Beranda</a></li>
-                        <li class="breadcrumb-item text-light active" aria-current="page">Galeri</li>
-                    </ol>
-                </div>
-                <div class="d-block position-relative ms-lg-auto">
-                    <input wire:model="search" type="text" name="search"
-                        class="form-control border border-orange rounded-0" placeholder="Cari galeri..."
-                        style="padding-right: 90px;">
-                    <button class="btn btn-outline-orange rounded-0 position-absolute top-0 end-0 px-4" type="button"
-                        id="button-addon2">
-                        <i class="fas fa-search fa-fw"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="py-5">
-        <div class="container">
+    <div class="d-block mb-3">
+        <div class="row g-2 justify-content-center align-items-stretch">
             @foreach ($data as $index => $item)
-            <div class="card mb-5">
-                <div class="box-content">
-                    <div class="d-none d-md-flex">
-                        <p class="fw-bold fs-5 text-capitalize text-dark pt-3 px-3">{{ $item->title }}</p>
-                        <div class="ms-auto" style="margin-top: -2rem;">
-                            <div class="px-3 py-3 bg-secondary fs-5 text-white">
-                                @if ($item->date_start == $item->date_end)
-                                {{date('d F Y', strtotime($item->date_end))}}
-                                @else
-                                {{date('d', strtotime($item->date_start))}}
-                                <span> - </span>
-                                {{date('d F Y', strtotime($item->date_end))}}
-                                @endif
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-3 py-3 py-lg-0">
-                        <p class="mb-0 text-dark-blue">
-                        <p class="fw-bold fs-5 text-dark d-block d-md-none">{{ $item->title }}</p>
-                        <?php echo $item->description ?>
-                        </p>
-                        <p class="mb-2">
-                            {{ $item->locations }}, {{ $item->venue }}
-                        </p>
-                    </div>
-                    <div class="p-3">
-                        @livewire('pages.gallery.images', ['post' => $item, 'indexs' => $index + 1])
-                    </div>
+            @if ($index == 0)
+            <div class="col-6 col-md-6">
+                <div class="img-height">
+                    <div class="img-gallery" style="background-image: url('/images/galleries/{{$item->location }}')"></div>
                 </div>
             </div>
+            @elseif ($index == 1)
+            <div class="col-6 col-md-3">
+                <div class="img-height">
+                    <div class="img-gallery" style="background-image: url('/images/galleries/{{$item->location }}')"></div>
+                </div>
+            </div>
+            @elseif ($index == 2)
+            <div class="col-6 col-md-3">
+                <div class="img-height">
+                    <div class="img-gallery" style="background-image: url('/images/galleries/{{$item->location }}')"></div>
+                </div>
+            </div>
+            @elseif ($index == 3)
+            <div class="col-6 col-md-3">
+                <div class="img-height">
+                    <div class="img-gallery" style="background-image: url('/images/galleries/{{$item->location }}')"></div>
+                </div>
+            </div>
+            @elseif ($index == 4)
+            <div class="col-6 col-md-6">
+                <div class="img-height">
+                    <div class="img-gallery" style="background-image: url('/images/galleries/{{$item->location }}')"></div>
+                </div>
+            </div>
+            @elseif ($index == 5)
+            <div class="col-6 col-md-3">
+                <div class="img-height">
+                    <div class="img-gallery" style="background-image: url('/images/galleries/{{$item->location }}')"></div>
+                </div>
+            </div>
+            @elseif ($index == 6)
+            <div class="col-6 col-md-6">
+                <div class="img-height">
+                    <div class="img-gallery" style="background-image: url('/images/galleries/{{$item->location }}')"></div>
+                </div>
+            </div>
+            @elseif ($index == 7)
+            <div class="col-6 col-md-6">
+                <div class="img-height">
+                    <div class="img-gallery" style="background-image: url('/images/galleries/{{$item->location }}')"></div>
+                </div>
+            </div>
+            @elseif ($index == 8)
+            <div class="col-6 col-md-3">
+                <div class="img-height">
+                    <div class="img-gallery" style="background-image: url('/images/galleries/{{$item->location }}')"></div>
+                </div>
+            </div>
+            @elseif ($index == 9)
+            <div class="col-6 col-md-3">
+                <div class="img-height">
+                    <div class="img-gallery" style="background-image: url('/images/galleries/{{$item->location }}')"></div>
+                </div>
+            </div>
+            @elseif ($index == 10)
+            <div class="col-6 col-md-6">
+                <div class="img-height">
+                    <div class="img-gallery" style="background-image: url('/images/galleries/{{$item->location }}')"></div>
+                </div>
+            </div>
+            @endif
             @endforeach
         </div>
-        @if ($data->hasPages())
-        <div class="container">
-            <div class="d-block py-3">
-                <nav class="d-block pt-4">
-                    {{ $data->links('livewire.layouts.paginations') }}
-                </nav>
-            </div>
-        </div>
-        @endif
+    </div>
+    <div class="d-flex align-items-center">
+        <p class="mb-0 border py-1 px-2 rounded">
+            <span class="fw-bold">{{ $data->count() }}</span>
+        </p>
+        
+        <nav class="ms-auto">
+            {{ $data->links('livewire.layouts.paginations') }}
+        </nav>
+        
     </div>
 </div>

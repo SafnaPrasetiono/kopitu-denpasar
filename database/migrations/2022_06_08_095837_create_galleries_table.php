@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('size');
             $table->string('extension');
             $table->string('location');
-            $table->integer('id_galleries_contents')->unique();
+            $table->integer('id_galleries_contents')->unique()->nullable();
             $table->timestamps();
         });
     }

@@ -10,15 +10,9 @@ use Livewire\WithPagination;
 class Data extends Component
 {
     use WithPagination;
-    public $search;
-
     public function render()
     {
-        if($this->search){
-            $data = galleries_contents::where('publish', 1)->orderBy('created_at', 'desc')->where('title', $this->search)->paginate(12);
-        }else {
-            $data = galleries_contents::where('publish', 1)->orderBy('created_at', 'desc')->paginate(12);
-        }
+        $data = galleries::orderBy('created_at')->paginate(11);
         return view('livewire.pages.gallery.data', ['data' => $data]);
     }
 }

@@ -87,14 +87,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
 
     // galery admin routing
     Route::get('/galeri', [galeryAdmin::class, 'index'])->name('admin.gallery');
-    Route::get('/galeri/buat', [galeryAdmin::class, 'create'])->name('admin.gallery.create');
-    Route::post('/galeri/buat/simpan', [galeryAdmin::class, 'post'])->name('admin.gallery.post');
-    Route::get('/galeri/buat/gambar/{id}', [galeryAdmin::class, 'images'])->name('admin.gallery.create.images');
-    Route::post('/galeri/buat/gambar/simpan/{id}', [galeryAdmin::class, 'imagesPost'])->name('admin.gallery.create.images.post');
-    Route::get('/galeri/buat/selesai/{id}', [galeryAdmin::class, 'finish'])->name('admin.gallery.create.finish');
-    Route::post('/galeri/buat/selesai/simpan/{id}', [galeryAdmin::class, 'publish'])->name('admin.gallery.create.finish.post');
-    Route::get('/galeri/update/{id}', [galeryAdmin::class, 'edit'])->name('admin.gallery.update');
-    Route::put('/galeri/update/simpan/{id}', [galeryAdmin::class, 'update'])->name('admin.gallery.update.post');
+    Route::post('/galeri/post', [galeryAdmin::class, 'galleryPost'])->name('admin.gallery.post');
 
     Route::get('/logout', [indexAdmin::class, 'logout'])->name('logout');
 });

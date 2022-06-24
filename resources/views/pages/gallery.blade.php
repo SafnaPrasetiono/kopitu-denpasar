@@ -2,32 +2,44 @@
 
 @section('head')
 <title>Kopitu Denpasar - Galeri dan kegiatan kopitu denpasar</title>
-<link rel="stylesheet" href="{{ url('/assets/dist/css/pages/news.css') }}">
 <style>
-    .card .box-content .btn-galery {
-        overflow: hidden;
-        border-radius: 4px;
-        cursor: pointer;
+    .img-height {
+        height: 280px;
     }
 
-    .card .box-content .btn-galery:hover .img-galery {
-        transform: scale(1.2);
-    }
-
-    .card .box-content .img-galery {
-        transition: all 0.3s;
+    .img-gallery {
         width: 100%;
         height: 100%;
         background-position: center;
-        background-repeat: no-repeat;
         background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @media(max-width: 768px) {
+        .img-height {
+            height: 200px;
+        }
     }
 </style>
 @endsection
 
 @section('pages')
-<div style="height: 75px;"></div>
-@livewire('pages.gallery.data')
+<div class="d-block" style="height: 70px"></div>
+<div class="d-block py-5 bg-danger">
+    <div class="container">
+        <h2 class="fw-bold text-white">Galeri Kopitu Denpasar</h2>
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="{{ route('index') }}"
+                    class="link-light text-decoration-none">beranda</a></li>
+            <li class="breadcrumb-item text-white" aria-current="page">Galeri</li>
+        </ol>
+    </div>
+</div>
+<div class="py-3">
+    <div class="container">
+        @livewire('pages.gallery.data')
+    </div>
+</div>
 @endsection
 
 @section('script')
